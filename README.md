@@ -1,10 +1,10 @@
-## Ambari Stacks, Views and Blueprints Workshop 
+## Ambari Extensibility via Stacks, Views and Blueprints Workshop 
 
 These demos are part of an upcoming Ambari webinar.
 
 Slides and webinar recording will be available at http://hortonworks.com/partners/learn/
 
-A higher level write up of the direction of Ambari is available [here](http://hortonworks.com/blog/future-apache-ambari/)
+A higher level write up of the direction of Ambari extensibility is available [here](http://hortonworks.com/blog/future-apache-ambari/)
 
 #### Ambari Stacks 
 Stacks wrap services of all shapes and sizes with a consistent definition and lifecycle-control layer. With this wrapper in-place, Ambari can rationalize operations over a broad set of services.
