@@ -11,9 +11,10 @@ Stacks wrap services of all shapes and sizes with a consistent definition and li
 To the Hadoop operator, this means that regardless of differences across services (e.g.install/start/stop/configure/status) each service can be managed and monitored with a consistent approach.
 This also provides a natural extension point for operators and the community to create their own custom stack definitions to “plug-in” new services that can co-exist with Hadoop
 
-Sample service (easy): [VNC](https://github.com/abajwa-hw/vnc-stack) or [IPA](https://github.com/abajwa-hw/freeipa-stack) or [Solr](https://github.com/abajwa-hw/search-demo/tree/master/solr_stack)
-Sample service (medium): [Angular JS](https://github.com/abajwa-hw/search-demo)
-Sample service (harder): [iPython notebook](https://github.com/randerzander/ipython-stack) 
+- Demos:
+  - Sample service (easy): [VNC](https://github.com/abajwa-hw/vnc-stack) or [IPA](https://github.com/abajwa-hw/freeipa-stack) or [Solr](https://github.com/abajwa-hw/search-demo/tree/master/solr_stack)
+  - Sample service (medium): [Angular JS](https://github.com/abajwa-hw/search-demo)
+  - Sample service (harder): [iPython notebook](https://github.com/randerzander/ipython-stack) 
 
 
 More details can be found [here](https://cwiki.apache.org/confluence/display/AMBARI/Stacks+and+Services)
@@ -24,10 +25,10 @@ More details can be found [here](https://cwiki.apache.org/confluence/display/AMB
 Views Customizing the Interaction Experience for Operators and Users
 Ambari Views will enable the community and operators to develop new ways to visualize operations, troubleshoot issues and interact with Hadoop. They will provide a framework to offer those experiences to specific sets of users. Via the pluggable UI framework, operators will be able to control which users get certain capabilities and to customize how those users interact with Hadoop.
 
-Ambari view to embed/integrate with other products
-Sample (easy): [iFrame view](https://github.com/abajwa-hw/iframe-view)
-Sample (medium): [Hive query view](https://github.com/randerzander/servlet-view-example)
-Sample (hard): [Contributed views](https://github.com/apache/ambari/tree/trunk/contrib/views)
+- Demos:
+  - Sample (easy): [iFrame view](https://github.com/abajwa-hw/iframe-view)
+  - Sample (medium): [Hive query view](https://github.com/randerzander/servlet-view-example)
+  - Sample (hard): [Contributed views](https://github.com/apache/ambari/tree/trunk/contrib/views)
 
 More details can be found [here](https://cwiki.apache.org/confluence/display/AMBARI/Views)
 
