@@ -2,7 +2,7 @@
 
 These demos are part of an upcoming Ambari webinar.
 
-Slides and webinar recording are available at http://hortonworks.com/partners/learn/
+Slides and webinar recording will be available at http://hortonworks.com/partners/learn/
 
 A higher level write up of the direction of Ambari is available [here](http://hortonworks.com/blog/future-apache-ambari/)
 
