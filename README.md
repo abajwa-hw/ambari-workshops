@@ -41,4 +41,6 @@ A portable and cohesive definition of a cluster (for sharing best practices on c
 
 More details can be found [here](https://cwiki.apache.org/confluence/display/AMBARI/Blueprints)
 
-
+- Demos:
+  - [Tutorial](http://hortonworks.com/blog/ambari-blueprints-delivers-missing-component-cluster-provisioning/)
+   
