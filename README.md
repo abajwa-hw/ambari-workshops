@@ -12,7 +12,7 @@ To the Hadoop operator, this means that regardless of differences across service
 This also provides a natural extension point for operators and the community to create their own custom stack definitions to “plug-in” new services that can co-exist with Hadoop
 
 - Demos:
-  - Sample service (easy): [VNC](https://github.com/abajwa-hw/vnc-stack) or [IPA](https://github.com/abajwa-hw/freeipa-stack) or [Solr](https://github.com/abajwa-hw/search-demo/tree/master/solr_stack)
+  - Sample service (easy): [VNC](https://github.com/abajwa-hw/vnc-stack) or [IPA](https://github.com/abajwa-hw/freeipa-stack) or [Solr](https://github.com/abajwa-hw/search-demo/tree/master/solr_stack) or [OpenLDAP](https://github.com/abajwa-hw/openldap-stack) or [Kerberos KDC](https://github.com/abajwa-hw/kdc-stack)
   - Sample service (medium): [Angular JS](https://github.com/abajwa-hw/search-demo)
   - Sample service (harder): [iPython notebook](https://github.com/randerzander/ipython-stack) 
 
