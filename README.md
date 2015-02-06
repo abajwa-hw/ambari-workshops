@@ -26,7 +26,7 @@ Views Customizing the Interaction Experience for Operators and Users
 Ambari Views will enable the community and operators to develop new ways to visualize operations, troubleshoot issues and interact with Hadoop. They will provide a framework to offer those experiences to specific sets of users. Via the pluggable UI framework, operators will be able to control which users get certain capabilities and to customize how those users interact with Hadoop.
 
 - Demos:
-  - Sample (easy): [iFrame view](https://github.com/abajwa-hw/iframe-view)
+  - Sample (easy): [iFrame view](https://github.com/abajwa-hw/iframe-view) or [REST API explorer view](https://github.com/abajwa-hw/blueprints-view)
   - Sample (medium): [Hive query view](https://github.com/randerzander/servlet-view-example)
   - Sample (hard): [Contributed views](https://github.com/apache/ambari/tree/trunk/contrib/views)
 
@@ -42,5 +42,6 @@ A portable and cohesive definition of a cluster (for sharing best practices on c
 More details can be found [here](https://cwiki.apache.org/confluence/display/AMBARI/Blueprints)
 
 - Demos:
+  - Sample (easy): [REST API explorer view](https://github.com/abajwa-hw/blueprints-view)
   - [Tutorial](http://hortonworks.com/blog/ambari-blueprints-delivers-missing-component-cluster-provisioning/)
    
