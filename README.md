@@ -12,12 +12,20 @@ To the Hadoop operator, this means that regardless of differences across service
 This also provides a natural extension point for operators and the community to create their own custom stack definitions to “plug-in” new services that can co-exist with Hadoop
 
 - Demos:
-  - Sample service (easy): [VNC](https://github.com/abajwa-hw/vnc-stack) or [IPA](https://github.com/abajwa-hw/freeipa-stack) or [Solr](https://github.com/abajwa-hw/search-demo/tree/master/solr_stack) or [OpenLDAP](https://github.com/abajwa-hw/openldap-stack) or [Kerberos KDC](https://github.com/abajwa-hw/kdc-stack)
-  - Sample service (medium): [Angular JS](https://github.com/abajwa-hw/search-demo)
-  - Sample service (harder): [iPython notebook](https://github.com/randerzander/ipython-stack) 
+  - Sample service (easy): 
+    - [VNC](https://github.com/abajwa-hw/vnc-stack)
+    - [Solr](https://github.com/abajwa-hw/search-demo/tree/master/solr_stack)
+  - Sample service (medium): 
+    - [Angular JS](https://github.com/abajwa-hw/search-demo)
+  - Sample service (harder): 
+    - [iPython notebook](https://github.com/randerzander/ipython-stack) 
 
-
-More details can be found [here](https://cwiki.apache.org/confluence/display/AMBARI/Stacks+and+Services)
+  - Security related services: 
+    - [FreeIPA](https://github.com/abajwa-hw/freeipa-stack)
+    - [OpenLDAP](https://github.com/abajwa-hw/openldap-stack)
+    - [Kerberos KDC](https://github.com/abajwa-hw/kdc-stack)
+    
+More details on stacks/services can be found [here](https://cwiki.apache.org/confluence/display/AMBARI/Stacks+and+Services)
 
 
 #### Ambari Views
@@ -26,9 +34,13 @@ Views Customizing the Interaction Experience for Operators and Users
 Ambari Views will enable the community and operators to develop new ways to visualize operations, troubleshoot issues and interact with Hadoop. They will provide a framework to offer those experiences to specific sets of users. Via the pluggable UI framework, operators will be able to control which users get certain capabilities and to customize how those users interact with Hadoop.
 
 - Demos:
-  - Sample (easy): [iFrame view](https://github.com/abajwa-hw/iframe-view) or [REST API explorer view](https://github.com/abajwa-hw/blueprints-view)
-  - Sample (medium): [Hive query view](https://github.com/randerzander/servlet-view-example)
-  - Sample (hard): [Contributed views](https://github.com/apache/ambari/tree/trunk/contrib/views)
+  - Sample (easy): 
+    - [iFrame view](https://github.com/abajwa-hw/iframe-view)
+    - [REST API explorer view](https://github.com/abajwa-hw/blueprints-view) which use only HTML/javascript
+  - Sample (medium): 
+    - [Hive query view](https://github.com/randerzander/servlet-view-example) which uses Java servelets
+  - Sample (hard): 
+    - [Contributed views](https://github.com/apache/ambari/tree/trunk/contrib/views)
 
 More details can be found [here](https://cwiki.apache.org/confluence/display/AMBARI/Views)
 
