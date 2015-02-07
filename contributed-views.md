@@ -15,6 +15,8 @@ Screenshots of [contributed views](https://github.com/apache/ambari/tree/trunk/c
 
 ![Image](../master/screenshots/Jobs-view.png?raw=true)
 
+![Image](../master/screenshots/Jobs-view2.png?raw=true)
+
 #### [Tez view](https://github.com/apache/ambari/tree/trunk/contrib/views/tez)
 
 ![Image](../master/screenshots/Tez-view.png?raw=true)
