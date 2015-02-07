@@ -43,3 +43,5 @@ Screenshots of [contributed views](https://github.com/apache/ambari/tree/trunk/c
 
 #### [Pig view](https://github.com/apache/ambari/tree/trunk/contrib/views/pig)
 
+![Image](../master/screenshots/pig-view1.png?raw=true)
+![Image](../master/screenshots/pig-view2.png?raw=true)
