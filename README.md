@@ -49,7 +49,7 @@ Ambari Views will enable the community and operators to develop new ways to visu
       - Pig
       
 
-More details can be found [here](https://cwiki.apache.org/confluence/display/AMBARI/Views)
+More details on Ambari views can be found [here](https://cwiki.apache.org/confluence/display/AMBARI/Views)
 
 #### Ambari Blueprints
 
