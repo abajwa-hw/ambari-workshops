@@ -40,7 +40,14 @@ Ambari Views will enable the community and operators to develop new ways to visu
   - Sample (medium): 
     - [Hive query view](https://github.com/randerzander/servlet-view-example) which uses Java servelets
   - Sample (hard): 
-    - [Contributed views](https://github.com/apache/ambari/tree/trunk/contrib/views) (see screenshots [here](https://github.com/abajwa-hw/ambari-workshops/blob/master/contributed-views.md))
+    - [Contributed views](https://github.com/apache/ambari/tree/trunk/contrib/views). For setup instructions and screenshots click [here](https://github.com/abajwa-hw/ambari-workshops/blob/master/contributed-views.md))
+      - Tez
+      - Files
+      - Jobs
+      - Capacity scheduler 
+      - Slider
+      - Pig
+      
 
 More details can be found [here](https://cwiki.apache.org/confluence/display/AMBARI/Views)
 
