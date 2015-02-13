@@ -24,6 +24,7 @@ This also provides a natural extension point for operators and the community to 
     - [FreeIPA](https://github.com/abajwa-hw/freeipa-stack)
     - [OpenLDAP](https://github.com/abajwa-hw/openldap-stack)
     - [Kerberos KDC](https://github.com/abajwa-hw/kdc-stack)
+    - [NSLCD/SSSD](https://github.com/abajwa-hw/nslcd-stack)
     
 More details on stacks/services can be found [here](https://cwiki.apache.org/confluence/display/AMBARI/Stacks+and+Services)
 
