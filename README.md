@@ -15,6 +15,7 @@ This also provides a natural extension point for operators and the community to 
   - Sample service (easy): 
     - [VNC](https://github.com/abajwa-hw/vnc-stack)
     - [Solr](https://github.com/abajwa-hw/search-demo/tree/master/solr_stack)
+    - [R stack](https://github.com/randerzander/r-stack)
   - Sample service (medium): 
     - [Angular JS](https://github.com/abajwa-hw/search-demo)
   - Sample service (harder): 
