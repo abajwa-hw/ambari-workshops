@@ -60,8 +60,6 @@ A repeatable model for cluster provisioning (for consistency);
 A method to automate cluster provisioning (for ad hoc cluster creation, whether bare metal or cloud);
 A portable and cohesive definition of a cluster (for sharing best practices on component layout and configuration).
 
-More details can be found [here](https://cwiki.apache.org/confluence/display/AMBARI/Blueprints)
-
 - Demos:
   - [REST API explorer view](https://github.com/abajwa-hw/blueprints-view) to get started with APIs
   - [Sample automation](https://github.com/seanorama/ambari-bootstrap) to install/configure Ambari Agent, Ambari Server and run pre-req checks
