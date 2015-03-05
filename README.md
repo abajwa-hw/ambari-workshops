@@ -65,5 +65,5 @@ More details can be found [here](https://cwiki.apache.org/confluence/display/AMB
 - Demos:
   - [REST API explorer view](https://github.com/abajwa-hw/blueprints-view)
   - [Tutorial](http://hortonworks.com/blog/ambari-blueprints-delivers-missing-component-cluster-provisioning/)
-  - Automation to install/configure Ambari Agent, Ambari Server and run pre-req checks:  [here](https://github.com/seanorama/ambari-bootstrap)
-  - Automation to deploy a cluster [here](https://github.com/seanorama/ambari-bootstrap/tree/master/deploy)
+  - Sample automation to install/configure Ambari Agent, Ambari Server and run pre-req checks:  [here](https://github.com/seanorama/ambari-bootstrap)
+  - Deploy a cluster via bluepeints [link](https://cwiki.apache.org/confluence/display/AMBARI/Blueprints)
