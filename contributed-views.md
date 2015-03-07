@@ -1,15 +1,25 @@
-## Contributed Ambari Views 
+# Contributed Ambari Views 
 
-### Contents
+## Contents
 
+### Ambari 2.0 sandbox
 
 - Prebuilt sandbox VM with Ambari 2.0 TP with contributed views installed
-Download [here](https://www.dropbox.com/s/filhqw11psth6tq/Hortonworks_2.2_Ambari2.0.ova?dl=0)
 
-Note to fix the Hive view, you will need to make the below update to the view setting:
-Start Ambari > admin > Manage Ambari > Views > select Hive > scroll to bottom > edit > make below change
-Change hive.auth to auth=NONE;user=hive
- 
+  - Download [here](https://www.dropbox.com/s/filhqw11psth6tq/Hortonworks_2.2_Ambari2.0.ova?dl=0)
+
+  - Note to fix the Hive view, you will need to make the below update to the view setting:
+    - Start Ambari
+    - admin
+    - Manage Ambari
+    - Views
+    - select Hive
+    - scroll to bottom
+    - edit
+    - Change hive.auth to auth=NONE;user=hive
+       
+
+### Views screenshots
 
 - Screenshots of [contributed views](https://github.com/apache/ambari/tree/trunk/contrib/views)
 
@@ -58,7 +68,7 @@ Change hive.auth to auth=NONE;user=hive
 ![Image](../master/screenshots/pig-view2.png?raw=true)
 
 
-##### Setup instructions for contributed view on sandbox
+### Setup instructions for contributed views
 
 ###### Option 1: Pull the latest view vide, compile and deploy
 
