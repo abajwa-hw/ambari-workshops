@@ -22,12 +22,19 @@
     - scroll to bottom
     - edit
     - Change hive.auth to auth=NONE;user=hive
+
+![Image](../master/screenshots/hive-view-setup.png?raw=true)
        
 
 ### Views screenshots
 
 - Screenshots of [contributed views](https://github.com/apache/ambari/tree/trunk/contrib/views)
 
+---------------------
+
+#### [Hive view](https://github.com/apache/ambari/tree/trunk/contrib/views/hive)
+
+![Image](../master/screenshots/hive-view.png?raw=true)
 
 ---------------------
 
