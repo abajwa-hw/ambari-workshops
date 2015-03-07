@@ -115,6 +115,7 @@ service ambari restart
 Prebuilt jars are available at https://repository.apache.org/#nexus-search;quick~ambari
 ```
 cd /var/lib/ambari-server/resources/views
+
 #wget https://dl.dropboxusercontent.com/u/114020/views/capacity-scheduler-0.3.0-SNAPSHOT.jar
 wget http://dev.hortonworks.com.s3.amazonaws.com/HDP-LABS/Projects/Ambari/2.0.0-Preview/contrib/views/capacity-scheduler-0.3.0-SNAPSHOT.jar
 #wget https://dl.dropboxusercontent.com/u/114020/views/files-0.1.0-SNAPSHOT.jar
