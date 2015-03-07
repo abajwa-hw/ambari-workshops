@@ -1,7 +1,12 @@
 # Contributed Ambari Views 
 
 ## Contents
-
+  - [Prebuilt sandbox VM](https://github.com/abajwa-hw/ambari-workshops/blob/master/contributed-views.md#ambari-20-sandbox)
+  - [Views screenshots](https://github.com/abajwa-hw/ambari-workshops/blob/master/contributed-views.md#views-screenshots)
+  - [Setup instructions](https://github.com/abajwa-hw/ambari-workshops/blob/master/contributed-views.md#setup-instructions-for-contributed-views)
+  
+---------------
+  
 ### Ambari 2.0 sandbox
 
 - Prebuilt sandbox VM with Ambari 2.0 TP with contributed views installed
