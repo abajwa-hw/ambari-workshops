@@ -4,7 +4,9 @@
   - [Prebuilt sandbox VM](https://github.com/abajwa-hw/ambari-workshops/blob/master/contributed-views.md#ambari-20-sandbox)
   - [Views screenshots](https://github.com/abajwa-hw/ambari-workshops/blob/master/contributed-views.md#views-screenshots)
   - [Setup instructions](https://github.com/abajwa-hw/ambari-workshops/blob/master/contributed-views.md#setup-instructions-for-contributed-views)
-  
+  - [Setup from scratch](https://github.com/abajwa-hw/security-workshops/blob/master/Setup-kerberos-Ambari.md)
+  - [Try new security wizard](https://github.com/abajwa-hw/security-workshops/blob/master/Setup-kerberos-Ambari.md#run-ambari-security-wizard)
+
 ---------------
   
 ### Ambari 2.0 sandbox
