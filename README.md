@@ -6,6 +6,8 @@ Slides and webinar recording will be available at http://hortonworks.com/partner
 
 A higher level write up of the direction of Ambari extensibility is available [here](http://hortonworks.com/blog/future-apache-ambari/)
 
+**Want to request a custom Ambari service or view to the community? Request [here](https://github.com/abajwa-hw/ambari-workshops/issues)**
+
 #### Ambari Stacks/Services 
 Stacks wrap services of all shapes and sizes with a consistent definition and lifecycle-control layer. With this wrapper in-place, Ambari can rationalize operations over a broad set of services.
 To the Hadoop operator, this means that regardless of differences across services (e.g.install/start/stop/configure/status) each service can be managed and monitored with a consistent approach.
