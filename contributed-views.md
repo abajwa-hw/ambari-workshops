@@ -131,7 +131,7 @@ wget http://dev.hortonworks.com.s3.amazonaws.com/HDP-LABS/Projects/Ambari/2.0.0-
 wget http://dev.hortonworks.com.s3.amazonaws.com/HDP-LABS/Projects/Ambari/2.0.0-Preview/contrib/views/files-0.1.0-SNAPSHOT.jar
 wget https://dl.dropboxusercontent.com/u/114020/views/jobs-1.3.0-SNAPSHOT.jar
 #wget https://dl.dropboxusercontent.com/u/114020/views/pig-0.1.0-SNAPSHOT.jar
-http://dev.hortonworks.com.s3.amazonaws.com/HDP-LABS/Projects/Ambari/2.0.0-Preview/contrib/views/pig-0.1.0-SNAPSHOT.jar
+wget http://dev.hortonworks.com.s3.amazonaws.com/HDP-LABS/Projects/Ambari/2.0.0-Preview/contrib/views/pig-0.1.0-SNAPSHOT.jar
 
 wget https://dl.dropboxusercontent.com/u/114020/views/tez-ambari-view-0.6.0-SNAPSHOT.jar
 wget http://dev.hortonworks.com.s3.amazonaws.com/HDP-LABS/Projects/Ambari/2.0.0-Preview/contrib/views/hive-0.1.0-SNAPSHOT.jar
