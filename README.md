@@ -15,20 +15,20 @@ This also provides a natural extension point for operators and the community to 
 
 - Demos:
   - Sample service (easy): 
-    - [VNC](https://github.com/abajwa-hw/vnc-stack)
-    - [Solr](https://github.com/abajwa-hw/search-demo/tree/master/solr_stack)
-    - [R stack](https://github.com/randerzander/r-stack)
+    - [VNC](https://github.com/abajwa-hw/vnc-stack) - remote desktop into your sandbox and start coding
+    - [Solr](https://github.com/abajwa-hw/search-demo/tree/master/solr_stack) - deploy/manage Solr from Ambari for search
+    - [R stack](https://github.com/randerzander/r-stack) - deploy/manage R from Ambari for data science
   - Sample service (medium): 
-    - [Node/Angular JS](https://github.com/abajwa-hw/search-demo)
-    - [Node/D3/Grunt JS](https://github.com/abajwa-hw/hdpviz)
+    - [Node/Angular JS](https://github.com/abajwa-hw/search-demo) - deploy/manage Angular.js webapp from Ambari
+    - [Node/D3/Grunt JS](https://github.com/abajwa-hw/hdpviz) - deploy/manage D3.js webapp from Ambari
   - Sample service (harder): 
-    - [iPython notebook](https://github.com/randerzander/ipython-stack) 
+    - [iPython notebook](https://github.com/randerzander/ipython-stack) - deploy/manage iPython notebook from Ambari for data science
 
   - Security related services.  
-    - [FreeIPA](https://github.com/abajwa-hw/freeipa-stack)
-    - [OpenLDAP](https://github.com/abajwa-hw/openldap-stack)
-    - [Kerberos KDC](https://github.com/abajwa-hw/kdc-stack)
-    - [NSLCD/SSSD](https://github.com/abajwa-hw/nslcd-stack)
+    - [FreeIPA](https://github.com/abajwa-hw/freeipa-stack) - deploy/manage FreeIPA LDAP from Ambari for identity management
+    - [OpenLDAP](https://github.com/abajwa-hw/openldap-stack) - deploy/manage OpenLDAP from Ambari for identity management
+    - [Kerberos KDC](https://github.com/abajwa-hw/kdc-stack) - deploy/manage KDC from Ambari for kerberos ticket management
+    - [NSLCD/SSSD](https://github.com/abajwa-hw/nslcd-stack) -  deploy/manage NSLCD from Ambari to enable OS to recognize LDAP users
     - See [steps](https://github.com/abajwa-hw/security-workshops/blob/master/Setup-kerberos-Ambari-services.md) on how to use these services to enable security from Ambari UI, with minimal command line work
     
 More details on stacks/services can be found [here](https://cwiki.apache.org/confluence/display/AMBARI/Stacks+and+Services)
@@ -41,15 +41,16 @@ Ambari Views will enable the community and operators to develop new ways to visu
 
 - Demos:
   - Sample (easy): 
-    - [iFrame view](https://github.com/abajwa-hw/iframe-view) (HTML only)
-    - [REST API explorer view](https://github.com/abajwa-hw/blueprints-view) (HTML/basic javascript)
+    - [iFrame view](https://github.com/abajwa-hw/iframe-view) (HTML only) - embed any webapp in Ambari
+    - [REST API explorer view](https://github.com/abajwa-hw/blueprints-view) (HTML/basic javascript) - get started with Ambari REST APIs
   - Sample (medium): 
-    - [Hive query view](https://github.com/randerzander/servlet-view-example) (Java servelets)
-    - [Search view](https://github.com/abajwa-hw/search-demo) (Node/Angular JS)
-    - [HDFS visualization view](https://github.com/abajwa-hw/hdpviz) (Node/D3/Grunt JS)
+    - [Hive query view](https://github.com/randerzander/servlet-view-example) (Java servelets) - submit Hive queries from Ambari
+    - [Document Crawler view](https://github.com/abajwa-hw/search-demo) (Node/Angular JS) - search through Word, PDF etc docs stored in HDFS via Ambari
+    - [HDFS visualization view](https://github.com/abajwa-hw/hdpviz) (Node/D3/Grunt JS) - Navigate HDFS visually using D3 charts via Ambari
     
   - Sample (hard): 
     - [Contributed views](https://github.com/apache/ambari/tree/trunk/contrib/views). For setup instructions and screenshots click [here](https://github.com/abajwa-hw/ambari-workshops/blob/master/contributed-views.md)
+	  - Hive
       - Tez
       - Files
       - Jobs
