@@ -15,7 +15,7 @@ This also provides a natural extension point for operators and the community to 
 
 - Demos:
   - Sample service (easy): 
-    - [VNC](https://github.com/abajwa-hw/vnc-stack) - remote desktop into your sandbox and start coding
+    - [VNC](https://github.com/abajwa-hw/vnc-stack) - remote desktop into your sandbox and start coding with Eclipse/IntelliJ on Spark/Storm
     - [Solr](https://github.com/abajwa-hw/search-demo/tree/master/solr_stack) - deploy/manage Solr from Ambari (for search)
     - [R stack](https://github.com/randerzander/r-stack) - deploy/manage R from Ambari (for data science)
   - Sample service (medium): 
