@@ -25,10 +25,10 @@ This also provides a natural extension point for operators and the community to 
     - [iPython notebook](https://github.com/randerzander/ipython-stack) - deploy/manage iPython notebook from Ambari for data science
 
   - Security related services.  
-    - [FreeIPA](https://github.com/abajwa-hw/freeipa-stack) - deploy/manage FreeIPA LDAP from Ambari for identity management
-    - [OpenLDAP](https://github.com/abajwa-hw/openldap-stack) - deploy/manage OpenLDAP from Ambari for identity management
-    - [Kerberos KDC](https://github.com/abajwa-hw/kdc-stack) - deploy/manage KDC from Ambari for kerberos ticket management
-    - [NSLCD/SSSD](https://github.com/abajwa-hw/nslcd-stack) -  deploy/manage NSLCD from Ambari to enable OS to recognize LDAP users
+    - [FreeIPA](https://github.com/abajwa-hw/freeipa-stack) - deploy/manage FreeIPA LDAP from Ambari (for identity management)
+    - [OpenLDAP](https://github.com/abajwa-hw/openldap-stack) - deploy/manage OpenLDAP from Ambari (for identity management)
+    - [Kerberos KDC](https://github.com/abajwa-hw/kdc-stack) - deploy/manage KDC from Ambari (for kerberos ticket management)
+    - [NSLCD/SSSD](https://github.com/abajwa-hw/nslcd-stack) -  deploy/manage NSLCD from Ambari (to enable OS to recognize LDAP users)
     - See [steps](https://github.com/abajwa-hw/security-workshops/blob/master/Setup-kerberos-Ambari-services.md) on how to use these services to enable security from Ambari UI, with minimal command line work
     
 More details on stacks/services can be found [here](https://cwiki.apache.org/confluence/display/AMBARI/Stacks+and+Services)
