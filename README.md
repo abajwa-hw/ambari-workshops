@@ -16,13 +16,13 @@ This also provides a natural extension point for operators and the community to 
 - Demos:
   - Sample service (easy): 
     - [VNC](https://github.com/abajwa-hw/vnc-stack) - remote desktop into your sandbox and start coding
-    - [Solr](https://github.com/abajwa-hw/search-demo/tree/master/solr_stack) - deploy/manage Solr from Ambari for search
-    - [R stack](https://github.com/randerzander/r-stack) - deploy/manage R from Ambari for data science
+    - [Solr](https://github.com/abajwa-hw/search-demo/tree/master/solr_stack) - deploy/manage Solr from Ambari (for search)
+    - [R stack](https://github.com/randerzander/r-stack) - deploy/manage R from Ambari (for data science)
   - Sample service (medium): 
     - [Node/Angular JS](https://github.com/abajwa-hw/search-demo) - deploy/manage Angular.js webapp from Ambari
     - [Node/D3/Grunt JS](https://github.com/abajwa-hw/hdpviz) - deploy/manage D3.js webapp from Ambari
   - Sample service (harder): 
-    - [iPython notebook](https://github.com/randerzander/ipython-stack) - deploy/manage iPython notebook from Ambari for data science
+    - [iPython notebook](https://github.com/randerzander/ipython-stack) - deploy/manage iPython notebook from Ambari (for data science)
 
   - Security related services.  
     - [FreeIPA](https://github.com/abajwa-hw/freeipa-stack) - deploy/manage FreeIPA LDAP from Ambari (for identity management)
