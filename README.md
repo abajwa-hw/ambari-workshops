@@ -23,7 +23,7 @@ This also provides a natural extension point for operators and the community to 
     - [Node/D3/Grunt JS](https://github.com/abajwa-hw/hdpviz) - deploy/manage 'HDFS Visualizer' D3.js webapp from Ambari (see below)
   - Sample service (harder): 
     - [iPython notebook](https://github.com/randerzander/ipython-stack) - deploy/manage iPython notebook from Ambari (for data science)
-  - [Apache services] (https://github.com/apache/ambari/tree/trunk/ambari-server/src/main/resources/stacks)
+  - [Apache services (HDP 2.2)] (https://github.com/apache/ambari/tree/trunk/ambari-server/src/main/resources/stacks/HDP/2.2/services)
     
 
   - Security related services.  
