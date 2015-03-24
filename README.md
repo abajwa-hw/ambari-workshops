@@ -19,15 +19,17 @@ This also provides a natural extension point for operators and the community to 
     - [Solr](https://github.com/abajwa-hw/search-demo/tree/master/solr_stack)
     - [R stack](https://github.com/randerzander/r-stack)
   - Sample service (medium): 
-    - [Angular JS](https://github.com/abajwa-hw/search-demo)
+    - [Node/Angular JS](https://github.com/abajwa-hw/search-demo)
+    - [Node/D3/Grunt JS](https://github.com/abajwa-hw/hdpviz)
   - Sample service (harder): 
     - [iPython notebook](https://github.com/randerzander/ipython-stack) 
 
-  - Security related services: 
+  - Security related services.  
     - [FreeIPA](https://github.com/abajwa-hw/freeipa-stack)
     - [OpenLDAP](https://github.com/abajwa-hw/openldap-stack)
     - [Kerberos KDC](https://github.com/abajwa-hw/kdc-stack)
     - [NSLCD/SSSD](https://github.com/abajwa-hw/nslcd-stack)
+    - See [steps](https://github.com/abajwa-hw/security-workshops/blob/master/Setup-kerberos-Ambari-services.md) on how to use these services to enable security from Ambari UI, with minimal command line work
     
 More details on stacks/services can be found [here](https://cwiki.apache.org/confluence/display/AMBARI/Stacks+and+Services)
 
@@ -39,10 +41,13 @@ Ambari Views will enable the community and operators to develop new ways to visu
 
 - Demos:
   - Sample (easy): 
-    - [iFrame view](https://github.com/abajwa-hw/iframe-view)
-    - [REST API explorer view](https://github.com/abajwa-hw/blueprints-view) which use only HTML/javascript
+    - [iFrame view](https://github.com/abajwa-hw/iframe-view) (HTML only)
+    - [REST API explorer view](https://github.com/abajwa-hw/blueprints-view) (HTML/basic javascript)
   - Sample (medium): 
-    - [Hive query view](https://github.com/randerzander/servlet-view-example) which uses Java servelets
+    - [Hive query view](https://github.com/randerzander/servlet-view-example) (Java servelets)
+    - [Search view](https://github.com/abajwa-hw/search-demo) (Node/Angular JS)
+    - [HDFS visualization view](https://github.com/abajwa-hw/hdpviz) (Node/D3/Grunt JS)
+    
   - Sample (hard): 
     - [Contributed views](https://github.com/apache/ambari/tree/trunk/contrib/views). For setup instructions and screenshots click [here](https://github.com/abajwa-hw/ambari-workshops/blob/master/contributed-views.md)
       - Tez
