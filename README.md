@@ -45,6 +45,8 @@ Ambari Views will enable the community and operators to develop new ways to visu
   - Sample (easy): 
     - [iFrame view](https://github.com/abajwa-hw/iframe-view) (HTML only) - embed any webapp in Ambari
     - [REST API explorer view](https://github.com/abajwa-hw/blueprints-view) (HTML/basic javascript) - get started with Ambari REST APIs
+    - [Apache examples](https://github.com/apache/ambari/tree/trunk/ambari-views/examples) - collection of simple Ambari Views on Apache page provided as a development guide.
+    
   - Sample (medium): 
     - [Hive query view](https://github.com/randerzander/servlet-view-example) (Java servelets) - submit Hive queries from Ambari
     - [Document Crawler view](https://github.com/abajwa-hw/search-demo) (Node/Angular JS) - search through Word, PDF etc docs stored in HDFS via Ambari
