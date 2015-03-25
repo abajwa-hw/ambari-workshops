@@ -73,9 +73,9 @@ A method to automate cluster provisioning (for ad hoc cluster creation, whether 
 A portable and cohesive definition of a cluster (for sharing best practices on component layout and configuration).
 
 - Links:
+  - [Apache Ambari Wiki for Blueprints](https://cwiki.apache.org/confluence/display/AMBARI/Blueprints)
   - [REST API explorer view](https://github.com/abajwa-hw/blueprints-view) to get started with APIs
   - [Sample automation](https://github.com/seanorama/ambari-bootstrap) to install/configure Ambari Agent, Ambari Server and run pre-req checks
-  - [Deploy a cluster via blueprint APIs](https://cwiki.apache.org/confluence/display/AMBARI/Blueprints)
-  - [Examples of updating component configuration via APIs](https://gist.github.com/seanorama/6e2958f847cee2132792#file-configurations-md)
-  - [Update Ambari password](https://gist.github.com/seanorama/6e2958f847cee2132792#file-change_password-md)
+  - [API Examples](https://github.com/seanorama/ambari-bootstrap/tree/master/api-examples) including:
+    - Basics, changing password, creating blueprints, deploying clusters, changing configurations
   - [Older tutorial](http://hortonworks.com/blog/ambari-blueprints-delivers-missing-component-cluster-provisioning/)
