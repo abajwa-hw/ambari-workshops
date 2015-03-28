@@ -1,8 +1,7 @@
 ## Ambari Extensibility via Stacks, Views and Blueprints Workshop 
 
-These demos are part of an upcoming Ambari webinar.
-
-Slides and webinar recording will be available at http://hortonworks.com/partners/learn/
+These demos are part of a webinar on Ambari. Slides and webinar recording available at http://hortonworks.com/partners/learn/
+Blog article on the topics presented in the webinar is available [here](http://hortonworks.com/blog/apache-ambari-technical-workshop/)
 
 A higher level write up of the direction of Ambari extensibility is available [here](http://hortonworks.com/blog/future-apache-ambari/)
 
@@ -15,6 +14,7 @@ This also provides a natural extension point for operators and the community to 
 
 - Demos:
   - Sample service (easy): 
+    - [ntpd](https://github.com/abajwa-hw/ntpd-stack) - Deploy/manage time daemon from Ambari. Most basic example of how to build service using 4 files.
     - [VNC](https://github.com/abajwa-hw/vnc-stack) - remote desktop into your sandbox and start coding with Eclipse/IntelliJ on Spark/Storm
     - [Solr](https://github.com/abajwa-hw/search-demo/tree/master/solr_stack) - deploy/manage Solr from Ambari (for search)
     - [R stack](https://github.com/randerzander/r-stack) - deploy/manage R from Ambari (for data science)
