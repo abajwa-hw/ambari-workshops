@@ -12,12 +12,16 @@ Stacks wrap services of all shapes and sizes with a consistent definition and li
 To the Hadoop operator, this means that regardless of differences across services (e.g.install/start/stop/configure/status) each service can be managed and monitored with a consistent approach.
 This also provides a natural extension point for operators and the community to create their own custom stack definitions to “plug-in” new services that can co-exist with Hadoop
 
-- Demos:
-  - Sample service (easy): 
-    - [ntpd](https://github.com/abajwa-hw/ntpd-stack) - Deploy/manage time daemon from Ambari. Most basic example of how to build service using 4 files.
-    - [VNC](https://github.com/abajwa-hw/vnc-stack) - remote desktop into your sandbox and start coding with Eclipse/IntelliJ on Spark/Storm
-    - [Solr](https://github.com/abajwa-hw/search-demo/tree/master/solr_stack) - deploy/manage Solr from Ambari (for search)
-    - [R stack](https://github.com/randerzander/r-stack) - deploy/manage R from Ambari (for data science)
+| Service name	| Git | Difficulty	| Description	| Comments	|
+| ------------- | ----- | ---------- 	| ------------  | --------  |
+| ntpd | [abajwa](https://github.com/abajwa-hw/ntpd-stack)  | Beginner | Deploy/manage time daemon from Ambari |  Most basic 'master' service example of how to wrap Ambari service around linux service  |
+| Maven | [randerzander](https://github.com/randerzander/maven-stack) |  Beginner | Deploy the bits for this developer tool on a cluster | Most basic 'client' service example of how to use Ambari to install custom bits on cluster |
+| VNC  | [abajwa](https://github.com/abajwa-hw/vnc-stack) | Easy | deploy VNC service and developer tools | Remote desktop into your sandbox and start coding with Eclipse/IntelliJ on Spark/Storm | 
+| R | [randerzander](https://github.com/randerzander/r-stack) | Easy | deploy/manage R from Ambari | Useful for data science use cases on Hadoop |
+| Solr  | [abajwa](https://github.com/abajwa-hw/search-demo/tree/master/solr_stack) | Easy | deploy/manage Solr from Ambari  | Useful for search use cases on Hadoop | 
+
+
+- Others:
   - Sample service (medium): 
     - [Node/Angular JS](https://github.com/abajwa-hw/search-demo) - deploy/manage 'Document Crawler' Angular.js webapp from Ambari (see below)
     - [Node/D3/Grunt JS](https://github.com/abajwa-hw/hdpviz) - deploy/manage 'HDFS Visualizer' D3.js webapp from Ambari (see below)
@@ -25,7 +29,6 @@ This also provides a natural extension point for operators and the community to 
     - [iPython notebook](https://github.com/randerzander/ipython-stack) - deploy/manage iPython notebook from Ambari (for data science)
   - [Apache services (HDP 2.2)] (https://github.com/apache/ambari/tree/trunk/ambari-server/src/main/resources/stacks/HDP/2.2/services)
     
-
   - Security related services.  
     - [FreeIPA](https://github.com/abajwa-hw/freeipa-stack) - deploy/manage FreeIPA LDAP from Ambari (for identity management)
     - [OpenLDAP](https://github.com/abajwa-hw/openldap-stack) - deploy/manage OpenLDAP from Ambari (for identity management)
@@ -33,10 +36,6 @@ This also provides a natural extension point for operators and the community to 
     - [NSLCD/SSSD](https://github.com/abajwa-hw/nslcd-stack) -  deploy/manage NSLCD from Ambari (to enable OS to recognize LDAP users)
     - See [steps](https://github.com/abajwa-hw/security-workshops/blob/master/Setup-kerberos-Ambari-services.md) on how to use these services to enable security from Ambari UI, with minimal command line work
 
-| Service name	| Git	| Difficulty	| Description	| Comments	|
-| ------------- | ----- | ---------- 	| ------------  | --------  |
-| ntpd | [ntpd](https://github.com/abajwa-hw/ntpd-stack)  | Beginner | Deploy/manage time daemon from Ambari |  Most basic example how to wrap Ambari service around linux service using 4 files |
-| VNC  | [VNC](https://github.com/abajwa-hw/vnc-stack) | Easy | deploy VNC service and developer tools | Remote desktop into your sandbox and start coding with Eclipse/IntelliJ on Spark/Storm | 
 
 More details on stacks/services can be found [here](https://cwiki.apache.org/confluence/display/AMBARI/Stacks+and+Services)
 
