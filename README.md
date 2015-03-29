@@ -34,6 +34,7 @@ This also provides a natural extension point for operators and the community to 
     - See [steps](https://github.com/abajwa-hw/security-workshops/blob/master/Setup-kerberos-Ambari-services.md) on how to use these services to enable security from Ambari UI, with minimal command line work
 
 | Service name	| Git	| Difficulty	| Description	| Comments	|
+| ------------- | ----- | ---------- 	| ------------  | --------  |
 | ntpd | [ntpd](https://github.com/abajwa-hw/ntpd-stack)  | Beginner | Deploy/manage time daemon from Ambari |  Most basic example how to wrap Ambari service around linux service using 4 files |
 | VNC  | [VNC](https://github.com/abajwa-hw/vnc-stack) | Easy | deploy VNC service and developer tools | Remote desktop into your sandbox and start coding with Eclipse/IntelliJ on Spark/Storm | 
 
