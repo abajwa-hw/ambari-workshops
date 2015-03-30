@@ -34,9 +34,9 @@ Documentation on stacks/services can be found [here](https://cwiki.apache.org/co
 | Service name	| Git | Difficulty	| Description	| Comments	|
 | ------------- | ----- | ---------- 	| ------------  | --------  |
 | FreeIPA | [abajwa](https://github.com/abajwa-hw/freeipa-stack) | Easy | deploy/manage FreeIPA LDAP from Ambari | For deploying combined LDAP/KDC for Identity Management |
-| OpenLDAP | [abajwa](https://github.com/abajwa-hw/openldap-stack) | Medium | deploy/manage OpenLDAP from Ambari | For deploying combined LDAP for Identity Management |
 | Kerberos KDC | [abajwa](https://github.com/abajwa-hw/kdc-stack) | Easy | deploy/manage KDC from Ambari | For kerberos ticket management |
 | NSLCD/SSSD | [abajwa](https://github.com/abajwa-hw/nslcd-stack) | Easy | deploy/manage NSLCD from Ambari | to enable OS to recognize LDAP users |
+| OpenLDAP | [abajwa](https://github.com/abajwa-hw/openldap-stack) | Medium | deploy/manage OpenLDAP from Ambari | For deploying combined LDAP for Identity Management |
 
 - See [guide](https://github.com/abajwa-hw/security-workshops/blob/master/Setup-kerberos-Ambari-services.md) on how to use these services to enable security from Ambari UI, with minimal command line work
 
