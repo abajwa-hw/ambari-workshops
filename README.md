@@ -14,7 +14,7 @@ This also provides a natural extension point for operators and the community to 
 Documentation on stacks/services can be found [here](https://cwiki.apache.org/confluence/display/AMBARI/Stacks+and+Services)
 
 ##### Sample services (general)
-| Service name	| Git | Difficulty	| Description	| Comments	|
+| Service name	| Code link | Difficulty	| Description	| Comments	|
 | ------------- | ----- | ---------- 	| ------------  | --------  |
 | [ntpd](http://www.ntp.org) | [abajwa](https://github.com/abajwa-hw/ntpd-stack)  | Beginner | Deploy/manage time daemon from Ambari |  Most basic 'master' service example of how to wrap Ambari service around linux service, using 4 files |
 | [Maven](http://maven.apache.org) | [randerzander](https://github.com/randerzander/maven-stack) |  Beginner | Deploy the bits for this developer tool on a cluster | Most basic 'client' service example of how to use Ambari to install custom bits on cluster |
@@ -25,13 +25,13 @@ Documentation on stacks/services can be found [here](https://cwiki.apache.org/co
 | Official component services | [Apache](https://github.com/apache/ambari/tree/trunk/ambari-server/src/main/resources/stacks/HDP/2.2/services)| Advanced | Browse the code for the HDP services | Kafka and Knox are good examples to follow |
 
 ##### Data science related sample services 
-| Service name	| Git | Difficulty	| Description	| Comments	|
+| Service name	| Code link | Difficulty	| Description	| Comments	|
 | ------------- | ----- | ---------- 	| ------------  | --------  |
 | [R](http://www.r-project.org) | [randerzander](https://github.com/randerzander/r-stack) | Easy | deploy/manage R from Ambari | Another example of a 'client' service which is useful for data science use cases on Hadoop |
 | [iPython notebook](http://ipython.org/notebook.html) | [randerzander](https://github.com/randerzander/ipython-stack) | Medium | deploy/manage iPython notebook from Ambari | Useful for data science use cases on Hadoop |
     
 ##### Security related sample services 
-| Service name	| Git | Difficulty	| Description	| Comments	|
+| Service name	| Code link | Difficulty	| Description	| Comments	|
 | ------------- | ----- | ---------- 	| ------------  | --------  |
 | [FreeIPA](http://www.freeipa.org) | [abajwa](https://github.com/abajwa-hw/freeipa-stack) | Easy | deploy/manage FreeIPA LDAP from Ambari | For deploying combined LDAP/KDC for Identity Management |
 | [Kerberos KDC](http://web.mit.edu/kerberos/) | [abajwa](https://github.com/abajwa-hw/kdc-stack) | Easy | deploy/manage KDC from Ambari | For kerberos ticket management |
@@ -50,7 +50,7 @@ Documentation on Ambari views can be found [here](https://cwiki.apache.org/confl
 
 ##### Sample views
 
-| View name	| Git | Difficulty	| Description	| Comments	|
+| View name	| Code link | Difficulty	| Description	| Comments	|
 | --------- | ----- | -------- 	| ------------  | --------  |
 | [iFrame](http://www.w3schools.com/html/html_iframe.asp)  | [abajwa](https://github.com/abajwa-hw/iframe-view) | Beginner | embed any webapp within Ambari | Most basic example of how to build an HTML only view, using 3 files |
 | REST API Explorer  | [abajwa](https://github.com/abajwa-hw/blueprints-view) | Easy |  get started with Ambari REST APIs | Similar to above but also includes basic javascript |
