@@ -60,8 +60,8 @@ Documentation on Ambari views can be found [here](https://cwiki.apache.org/confl
 | HDFS visualizer | [dp1140a](https://github.com/abajwa-hw/hdpviz) | Medium | Navigate HDFS visually using D3 charts via Ambari | Node/D3/Grunt JS webapp that invokes WebHDFS APIs. Inspired by [Twitters HDFS du project](https://blog.twitter.com/2012/visualizing-hadoop-with-hdfs-du) |
 
 ##### Contributed views
-    
-    - [Contributed views](https://github.com/apache/ambari/tree/trunk/contrib/views) below will be TP in upcoming version of Ambari. For setup instructions and screenshots click [here](https://github.com/abajwa-hw/ambari-workshops/blob/master/contributed-views.md)
+
+[Contributed views](https://github.com/apache/ambari/tree/trunk/contrib/views) below will be TP in upcoming version of Ambari. For setup instructions and screenshots click [here](https://github.com/abajwa-hw/ambari-workshops/blob/master/contributed-views.md)
 	  - Hive
       - Tez
       - Files
