@@ -1,9 +1,9 @@
 ## Ambari Extensibility via Stacks, Views and Blueprints Workshop 
 
-These demos are part of a webinar on Ambari. Slides and webinar recording available at http://hortonworks.com/partners/learn/
-Blog article on the topics presented in the webinar is available [here](http://hortonworks.com/blog/apache-ambari-technical-workshop/)
-
-A higher level write up of the direction of Ambari extensibility is available [here](http://hortonworks.com/blog/future-apache-ambari/)
+These demos are part of a webinar on Ambari. 
+- Slides and webinar recording available at http://hortonworks.com/partners/learn/
+- Blog article on the topics presented in the webinar is available [here](http://hortonworks.com/blog/apache-ambari-technical-workshop/)
+- A higher level blog about the direction of Ambari extensibility is available [here](http://hortonworks.com/blog/future-apache-ambari/)
 
 **Want to suggest a custom Ambari service or view? Suggest [here](https://github.com/abajwa-hw/ambari-workshops/issues)**
 
