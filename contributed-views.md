@@ -106,8 +106,8 @@ export PATH=$PATH:$M2
 cd
 git clone https://github.com/apache/ambari.git
 cd ambari/contrib/views
-#Tell maven to compile against ambari jar (double check that the jar exists in this location, first)
-mvn install:install-file -Dfile=/usr/lib/ambari-server/ambari-views-1.7.0.169.jar -DgroupId=org.apache.ambari -DartifactId=ambari-views -Dversion=1.3.0-SNAPSHOT -Dpackaging=jar
+#No longer needed - tell maven to compile against ambari jar (double check that the jar exists in this location, first)
+#mvn install:install-file -Dfile=/usr/lib/ambari-server/ambari-views-1.7.0.169.jar -DgroupId=org.apache.ambari -DartifactId=ambari-views -Dversion=1.3.0-SNAPSHOT -Dpackaging=jar
 
 #Compile view
 mvn clean package
@@ -125,16 +125,15 @@ Prebuilt jars are available at https://repository.apache.org/#nexus-search;quick
 ```
 cd /var/lib/ambari-server/resources/views
 
-#wget https://dl.dropboxusercontent.com/u/114020/views/capacity-scheduler-0.3.0-SNAPSHOT.jar
-wget http://dev.hortonworks.com.s3.amazonaws.com/HDP-LABS/Projects/Ambari/2.0.0-Preview/contrib/views/capacity-scheduler-0.3.0-SNAPSHOT.jar
-#wget https://dl.dropboxusercontent.com/u/114020/views/files-0.1.0-SNAPSHOT.jar
-wget http://dev.hortonworks.com.s3.amazonaws.com/HDP-LABS/Projects/Ambari/2.0.0-Preview/contrib/views/files-0.1.0-SNAPSHOT.jar
-wget https://dl.dropboxusercontent.com/u/114020/views/jobs-1.3.0-SNAPSHOT.jar
-#wget https://dl.dropboxusercontent.com/u/114020/views/pig-0.1.0-SNAPSHOT.jar
-wget http://dev.hortonworks.com.s3.amazonaws.com/HDP-LABS/Projects/Ambari/2.0.0-Preview/contrib/views/pig-0.1.0-SNAPSHOT.jar
 
-wget https://dl.dropboxusercontent.com/u/114020/views/tez-ambari-view-0.6.0-SNAPSHOT.jar
+wget http://dev.hortonworks.com.s3.amazonaws.com/HDP-LABS/Projects/Ambari/2.0.0-Preview/contrib/views/capacity-scheduler-0.3.0-SNAPSHOT.jar
+wget http://dev.hortonworks.com.s3.amazonaws.com/HDP-LABS/Projects/Ambari/2.0.0-Preview/contrib/views/files-0.1.0-SNAPSHOT.jar
+wget http://dev.hortonworks.com.s3.amazonaws.com/HDP-LABS/Projects/Ambari/2.0.0-Preview/contrib/views/pig-0.1.0-SNAPSHOT.jar
 wget http://dev.hortonworks.com.s3.amazonaws.com/HDP-LABS/Projects/Ambari/2.0.0-Preview/contrib/views/hive-0.1.0-SNAPSHOT.jar
+
+wget https://dl.dropboxusercontent.com/u/114020/views/jobs-1.3.0-SNAPSHOT.jar
+wget https://dl.dropboxusercontent.com/u/114020/views/tez-ambari-view-0.6.0-SNAPSHOT.jar
+
 
 #on non-sandbox
 service ambari-server restart
@@ -145,4 +144,4 @@ service ambari restart
 - Once deployed, create an instance of the view in Ambari
   - http://sandbox.hortonworks.com:8080 > admin > Manage Ambari > Views > (select view) > Create instance > fill out required fields and save
   - To see details of what to fill out in each field, you can refer to the views README on [git](https://github.com/apache/ambari/tree/trunk/contrib/views) or in [TP instructions](https://docs.google.com/a/hortonworks.com/document/d/1u6QPWLOd9Wsd_hp5iNkg0D2xpmylMia7fXpmE3iGL-0/edit#)
-  - Now the view should appear in your views area (which you can access via the square icon next to “admin” drop down on upper left)"
+  - Now the view should appear in your views area (which you can access via the square icon next to "admin" drop down on upper left)"
