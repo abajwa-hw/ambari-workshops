@@ -20,8 +20,8 @@ Documentation on stacks/services can be found [here](https://cwiki.apache.org/co
 | [Maven](http://maven.apache.org) | [randerzander](https://github.com/randerzander/maven-stack) |  Beginner | Deploy the bits for this developer tool on a cluster | Most basic 'client' service example of how to use Ambari to install custom bits on cluster |
 | [VNC](http://en.wikipedia.org/wiki/Virtual_Network_Computing)  | [abajwa](https://github.com/abajwa-hw/vnc-stack) | Easy | deploy VNC service and developer tools | Remote desktop into your sandbox and start coding with Eclipse/IntelliJ on Spark/Storm | 
 | [Solr](http://lucene.apache.org/solr/)  | [abajwa](https://github.com/abajwa-hw/search-demo/tree/master/solr_stack) | Easy | deploy/manage Solr from Ambari  | Useful for search use cases on Hadoop | 
-| HDFS Vizualizer | [Node/D3/Grunt JS](https://github.com/abajwa-hw/hdpviz) | Medium | deploy/manage D3.js webapp from Ambari | Inspired by [Twitters HDFS du project](https://blog.twitter.com/2012/visualizing-hadoop-with-hdfs-du) |
-| Document crawler | [Node/Angular JS](https://github.com/abajwa-hw/search-demo) | Medium | search through Word, PDF etc docs stored in HDFS via Ambari| deploy/manage Angular.js webapp from Ambari  |
+| HDFS Vizualizer | [abajwa](https://github.com/abajwa-hw/hdpviz) | Medium | deploy/manage D3.js webapp from Ambari | Inspired by [Twitters HDFS du project](https://blog.twitter.com/2012/visualizing-hadoop-with-hdfs-du) - see below for view details |
+| Document crawler | [abajwa](https://github.com/abajwa-hw/search-demo) | Medium | deploy/manage Angular.js webapp from Ambari | search through Word, PDF etc docs stored in HDFS via Ambari - see below for view details |
 | Official component services | [Apache](https://github.com/apache/ambari/tree/trunk/ambari-server/src/main/resources/stacks/HDP/2.2/services)| Advanced | Browse the code for the HDP services | Kafka and Knox are good examples to follow |
 
 ##### Data science related sample services 
