@@ -27,7 +27,7 @@ Documentation on stacks/services can be found [here](https://cwiki.apache.org/co
 ##### Data science related services 
 | Service name	| Git | Difficulty	| Description	| Comments	|
 | ------------- | ----- | ---------- 	| ------------  | --------  |
-| R | [randerzander](https://github.com/randerzander/r-stack) | Easy | deploy/manage R from Ambari | Useful for data science use cases on Hadoop |
+| R | [randerzander](https://github.com/randerzander/r-stack) | Easy | deploy/manage R from Ambari | Another example of a 'client' service which is useful for data science use cases on Hadoop |
 | iPython notebook | [randerzander](https://github.com/randerzander/ipython-stack) | Medium | deploy/manage iPython notebook from Ambari | Useful for data science use cases on Hadoop |
     
 ##### Security related services 
