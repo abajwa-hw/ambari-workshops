@@ -7,37 +7,38 @@ A higher level write up of the direction of Ambari extensibility is available [h
 
 **Want to suggest a custom Ambari service or view? Suggest [here](https://github.com/abajwa-hw/ambari-workshops/issues)**
 
-#### Ambari Stacks/Services 
+#### Ambari Stack Services 
 Stacks wrap services of all shapes and sizes with a consistent definition and lifecycle-control layer. With this wrapper in-place, Ambari can rationalize operations over a broad set of services.
 To the Hadoop operator, this means that regardless of differences across services (e.g.install/start/stop/configure/status) each service can be managed and monitored with a consistent approach.
 This also provides a natural extension point for operators and the community to create their own custom stack definitions to “plug-in” new services that can co-exist with Hadoop
+Documentation on stacks/services can be found [here](https://cwiki.apache.org/confluence/display/AMBARI/Stacks+and+Services)
 
 | Service name	| Git | Difficulty	| Description	| Comments	|
 | ------------- | ----- | ---------- 	| ------------  | --------  |
 | ntpd | [abajwa](https://github.com/abajwa-hw/ntpd-stack)  | Beginner | Deploy/manage time daemon from Ambari |  Most basic 'master' service example of how to wrap Ambari service around linux service  |
 | Maven | [randerzander](https://github.com/randerzander/maven-stack) |  Beginner | Deploy the bits for this developer tool on a cluster | Most basic 'client' service example of how to use Ambari to install custom bits on cluster |
 | VNC  | [abajwa](https://github.com/abajwa-hw/vnc-stack) | Easy | deploy VNC service and developer tools | Remote desktop into your sandbox and start coding with Eclipse/IntelliJ on Spark/Storm | 
-| R | [randerzander](https://github.com/randerzander/r-stack) | Easy | deploy/manage R from Ambari | Useful for data science use cases on Hadoop |
 | Solr  | [abajwa](https://github.com/abajwa-hw/search-demo/tree/master/solr_stack) | Easy | deploy/manage Solr from Ambari  | Useful for search use cases on Hadoop | 
+| HDFS Vizualizer | [Node/D3/Grunt JS](https://github.com/abajwa-hw/hdpviz) | Medium | deploy/manage D3.js webapp from Ambari | Inspired by [Twitters HDFS du project](https://blog.twitter.com/2012/visualizing-hadoop-with-hdfs-du) |
+| Document crawler | [Node/Angular JS](https://github.com/abajwa-hw/search-demo) | Medium | deploy/manage Angular.js webapp from Ambari | Demo for search workshop |
+| Official component services | [Apache](https://github.com/apache/ambari/tree/trunk/ambari-server/src/main/resources/stacks/HDP/2.2/services)| Advanced | Browse the code for the HDP services | Kafka and Knox are good examples to follow |
 
-
-- Others:
-  - Sample service (medium): 
-    - [Node/Angular JS](https://github.com/abajwa-hw/search-demo) - deploy/manage 'Document Crawler' Angular.js webapp from Ambari (see below)
-    - [Node/D3/Grunt JS](https://github.com/abajwa-hw/hdpviz) - deploy/manage 'HDFS Visualizer' D3.js webapp from Ambari (see below)
-  - Sample service (harder): 
-    - [iPython notebook](https://github.com/randerzander/ipython-stack) - deploy/manage iPython notebook from Ambari (for data science)
-  - [Apache services (HDP 2.2)] (https://github.com/apache/ambari/tree/trunk/ambari-server/src/main/resources/stacks/HDP/2.2/services)
+##### Data science related services 
+| Service name	| Git | Difficulty	| Description	| Comments	|
+| ------------- | ----- | ---------- 	| ------------  | --------  |
+| R | [randerzander](https://github.com/randerzander/r-stack) | Easy | deploy/manage R from Ambari | Useful for data science use cases on Hadoop |
+| iPython notebook | [randerzander](https://github.com/randerzander/ipython-stack) | Medium | deploy/manage iPython notebook from Ambari | Useful for data science use cases on Hadoop |
     
-  - Security related services.  
-    - [FreeIPA](https://github.com/abajwa-hw/freeipa-stack) - deploy/manage FreeIPA LDAP from Ambari (for identity management)
-    - [OpenLDAP](https://github.com/abajwa-hw/openldap-stack) - deploy/manage OpenLDAP from Ambari (for identity management)
-    - [Kerberos KDC](https://github.com/abajwa-hw/kdc-stack) - deploy/manage KDC from Ambari (for kerberos ticket management)
-    - [NSLCD/SSSD](https://github.com/abajwa-hw/nslcd-stack) -  deploy/manage NSLCD from Ambari (to enable OS to recognize LDAP users)
-    - See [steps](https://github.com/abajwa-hw/security-workshops/blob/master/Setup-kerberos-Ambari-services.md) on how to use these services to enable security from Ambari UI, with minimal command line work
+##### Security related services 
+| Service name	| Git | Difficulty	| Description	| Comments	|
+| ------------- | ----- | ---------- 	| ------------  | --------  |
+| FreeIPA | [abajwa](https://github.com/abajwa-hw/freeipa-stack) | Easy | deploy/manage FreeIPA LDAP from Ambari | For deploying combined LDAP/KDC for Identity Management |
+| OpenLDAP | [abajwa](https://github.com/abajwa-hw/openldap-stack) | Medium | deploy/manage OpenLDAP from Ambari | For deploying combined LDAP for Identity Management |
+| Kerberos KDC | [abajwa](https://github.com/abajwa-hw/kdc-stack) | Easy | deploy/manage KDC from Ambari | For kerberos ticket management |
+| NSLCD/SSSD | [abajwa](https://github.com/abajwa-hw/nslcd-stack) | Easy | deploy/manage NSLCD from Ambari | to enable OS to recognize LDAP users |
 
+- See [guide](https://github.com/abajwa-hw/security-workshops/blob/master/Setup-kerberos-Ambari-services.md) on how to use these services to enable security from Ambari UI, with minimal command line work
 
-More details on stacks/services can be found [here](https://cwiki.apache.org/confluence/display/AMBARI/Stacks+and+Services)
 
 
 #### Ambari Views
