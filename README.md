@@ -62,13 +62,13 @@ Documentation on Ambari views can be found [here](https://cwiki.apache.org/confl
 ##### Contributed views
 
 [Contributed views](https://github.com/apache/ambari/tree/trunk/contrib/views) below will be TP in upcoming version of Ambari. For setup instructions and screenshots click [here](https://github.com/abajwa-hw/ambari-workshops/blob/master/contributed-views.md)
-	  - Hive
-      - Tez
-      - Files
-      - Jobs
-      - Capacity scheduler 
-      - Slider
-      - Pig
+  - Hive
+  - Tez
+  - Files
+  - Jobs
+  - Capacity scheduler 
+  - Slider
+  - Pig
       
 
 
