@@ -54,10 +54,10 @@ Documentation on Ambari views can be found [here](https://cwiki.apache.org/confl
 | --------- | ----- | -------- 	| ------------  | --------  |
 | [iFrame](http://www.w3schools.com/html/html_iframe.asp)  | [abajwa](https://github.com/abajwa-hw/iframe-view) | Beginner | embed any webapp within Ambari | Most basic example of how to build an HTML only view, using 3 files |
 | REST API Explorer  | [abajwa](https://github.com/abajwa-hw/blueprints-view) | Easy |  get started with Ambari REST APIs | Similar to above but also includes basic javascript |
-| Apache sample views | [Apache](https://github.com/apache/ambari/tree/trunk/ambari-views/examples) | Varying | Sample views from Apache Ambari page | Starts with examples of basic html views and advances to java servlet views with configs|
 | [Hive](https://cwiki.apache.org/confluence/display/Hive/Home) query | [randerzander](https://github.com/randerzander/servlet-view-example) | Medium | submit Hive SQL from Ambari | Basic example of java servlet view |
 | Document Crawler | [pcodding](https://github.com/abajwa-hw/search-demo) | Medium | search through Word, PDF etc docs stored in HDFS via Ambari | Example of view written in Node.js/Angular JS |
 | HDFS visualizer | [dp1140a](https://github.com/abajwa-hw/hdpviz) | Medium | Navigate HDFS visually using D3 charts via Ambari | Node/D3/Grunt JS webapp that invokes WebHDFS APIs. Inspired by [Twitters HDFS du project](https://blog.twitter.com/2012/visualizing-hadoop-with-hdfs-du) |
+| Apache sample views | [Apache](https://github.com/apache/ambari/tree/trunk/ambari-views/examples) | Varying | Sample views from Apache Ambari page | Starts with examples of basic html views and advances to java servlet views with configs|
 
 ##### Contributed views
 
