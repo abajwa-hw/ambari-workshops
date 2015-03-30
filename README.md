@@ -58,7 +58,6 @@ Documentation on Ambari views can be found [here](https://cwiki.apache.org/confl
 | Hive query | [randerzander](https://github.com/randerzander/servlet-view-example) | Medium | submit Hive SQL from Ambari | Basic example of java servlet view |
 | Document Crawler | [pcodding](https://github.com/abajwa-hw/search-demo) | Medium | search through Word, PDF etc docs stored in HDFS via Ambari | Example of view written in Node.js/Angular JS |
 | HDFS visualizer | [dp1140a](https://github.com/abajwa-hw/hdpviz) | Medium | Navigate HDFS visually using D3 charts via Ambari | Node/D3/Grunt JS webapp that invokes WebHDFS APIs. Inspired by [Twitters HDFS du project](https://blog.twitter.com/2012/visualizing-hadoop-with-hdfs-du) |
-| Apache Contributed views | [Apache](https://github.com/apache/ambari/tree/trunk/contrib/views) | 
 
 ##### Contributed views
     
