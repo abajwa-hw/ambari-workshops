@@ -29,6 +29,7 @@ Documentation on stacks/services can be found [here](https://cwiki.apache.org/co
 | ------------- | ----- | ---------- 	| ------------  | --------  |
 | [R](http://www.r-project.org) | [randerzander](https://github.com/randerzander/r-stack) | Easy | deploy/manage R from Ambari | Another example of a 'client' service which is useful for data science use cases on Hadoop |
 | [iPython notebook](http://ipython.org/notebook.html) | [randerzander](https://github.com/randerzander/ipython-stack) | Medium | deploy/manage iPython notebook from Ambari | Useful for data science use cases on Hadoop |
+| [Zeppelin notebook](https://zeppelin.incubator.apache.org) | [abajwa](https://github.com/abajwa-hw/zeppelin-stack) | Medium | deploy/manage Zeppelin notebook from Ambari | Useful for data science use cases on Hadoop |
     
 ##### Security related sample services 
 | Service name	| Github url/author | Difficulty	| Description	| Comments	|
