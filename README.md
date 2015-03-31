@@ -10,7 +10,7 @@ These demos are part of a webinar on Ambari.
 #### Contents
 - [Ambari stack services](https://github.com/abajwa-hw/ambari-workshops#ambari-stack-services)
 - [Ambari Views](https://github.com/abajwa-hw/ambari-workshops#ambari-views)
-- [Ambari Blueprints/APIs](https://github.com/abajwa-hw/ambari-workshops#ambari-blueprints-apis)
+- [Ambari Blueprints/APIs](https://github.com/abajwa-hw/ambari-workshops#ambari-blueprintsapis)
 
 --------------------
 
