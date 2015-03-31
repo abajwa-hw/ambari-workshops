@@ -7,6 +7,13 @@ These demos are part of a webinar on Ambari.
 
 **Want to suggest a custom Ambari service or view? Suggest [here](https://github.com/abajwa-hw/ambari-workshops/issues)**
 
+#### Contents
+[Ambari stack services](https://github.com/abajwa-hw/ambari-workshops#ambari-stack-services)
+[Ambari Views](https://github.com/abajwa-hw/ambari-workshops#ambari-views)
+[Ambari Blueprints/APIs](https://github.com/abajwa-hw/ambari-workshops#ambari-blueprints-apis)
+
+--------------------
+
 #### Ambari Stack Services 
 Stacks wrap services of all shapes and sizes with a consistent definition and lifecycle-control layer. With this wrapper in-place, Ambari can rationalize operations over a broad set of services.
 To the Hadoop operator, this means that regardless of differences across services (e.g.install/start/stop/configure/status) each service can be managed and monitored with a consistent approach.
@@ -41,7 +48,7 @@ Documentation on stacks/services can be found [here](https://cwiki.apache.org/co
 
 - See [guide](https://github.com/abajwa-hw/security-workshops/blob/master/Setup-kerberos-Ambari-services.md) on how to use these services to enable security from Ambari UI, with minimal command line work
 
-
+--------------------
 
 #### Ambari Views
 
@@ -72,9 +79,10 @@ Documentation on Ambari views can be found [here](https://cwiki.apache.org/confl
   - Pig
       
 
+------------------------
 
 
-#### Ambari Blueprints
+#### Ambari Blueprints/APIs
 
 Ambari Blueprints deliver the below benefits:
 A repeatable model for cluster provisioning (for consistency);
