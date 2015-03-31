@@ -8,9 +8,9 @@ These demos are part of a webinar on Ambari.
 **Want to suggest a custom Ambari service or view? Suggest [here](https://github.com/abajwa-hw/ambari-workshops/issues)**
 
 #### Contents
-[Ambari stack services](https://github.com/abajwa-hw/ambari-workshops#ambari-stack-services)
-[Ambari Views](https://github.com/abajwa-hw/ambari-workshops#ambari-views)
-[Ambari Blueprints/APIs](https://github.com/abajwa-hw/ambari-workshops#ambari-blueprints-apis)
+- [Ambari stack services](https://github.com/abajwa-hw/ambari-workshops#ambari-stack-services)
+- [Ambari Views](https://github.com/abajwa-hw/ambari-workshops#ambari-views)
+- [Ambari Blueprints/APIs](https://github.com/abajwa-hw/ambari-workshops#ambari-blueprints-apis)
 
 --------------------
 
