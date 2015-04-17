@@ -18,15 +18,15 @@
 
   - ~~Download [here](https://www.dropbox.com/s/filhqw11psth6tq/Hortonworks_2.2_Ambari2.0.ova?dl=0)~~
 
-  - Note to fix the Hive view, you will need to make the below update to the view setting:
-    - Start Ambari
-    - admin
-    - Manage Ambari
-    - Views
-    - select Hive
-    - scroll to bottom
-    - edit
-    - Change hive.auth to auth=NONE;user=hive
+  - ~~Note to fix the Hive view, you will need to make the below update to the view setting:~~
+    - ~~Start Ambari~~
+    - ~~admin~~
+    - ~~Manage Ambari~~
+    - ~~Views~~
+    - ~~select Hive~~
+    - ~~scroll to bottom~~
+    - ~~edit~~
+    - ~~Change hive.auth to auth=NONE;user=hive~~
 
 
        
