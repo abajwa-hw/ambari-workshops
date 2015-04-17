@@ -10,10 +10,13 @@
 ---------------
   
 ### Ambari 2.0 sandbox
+- Official HDP 2.2.4 sandbox with Ambari 2.0 is available for download [here](http://hortonworks.com/products/hortonworks-sandbox/#install). It includes
+	- Pre-installed Spark 1.2.1
+	- Pre-installed views
 
-- Prebuilt sandbox VM with Ambari 2.0 TP with contributed views installed
+- ~~Prebuilt sandbox VM with Ambari 2.0 TP with contributed views installed~~
 
-  - Download [here](https://www.dropbox.com/s/filhqw11psth6tq/Hortonworks_2.2_Ambari2.0.ova?dl=0)
+  - ~~Download [here](https://www.dropbox.com/s/filhqw11psth6tq/Hortonworks_2.2_Ambari2.0.ova?dl=0)~~
 
   - Note to fix the Hive view, you will need to make the below update to the view setting:
     - Start Ambari
@@ -25,7 +28,7 @@
     - edit
     - Change hive.auth to auth=NONE;user=hive
 
-![Image](../master/screenshots/hive-view-setup.png?raw=true)
+
        
 
 ### Views screenshots
