@@ -41,6 +41,8 @@
 
 ![Image](../master/screenshots/hive-view.png?raw=true)
 
+![Image](../master/screenshots/hive-view-tez.png?raw=true)
+
 ---------------------
 
 #### [Capacity scheduler view](https://github.com/apache/ambari/tree/trunk/contrib/views/capacity-scheduler)
