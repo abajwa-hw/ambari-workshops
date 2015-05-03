@@ -111,8 +111,6 @@ export PATH=$PATH:$M2
 cd
 git clone https://github.com/apache/ambari.git
 cd ambari/contrib/views
-#No longer needed - tell maven to compile against ambari jar (double check that the jar exists in this location, first)
-#mvn install:install-file -Dfile=/usr/lib/ambari-server/ambari-views-1.7.0.169.jar -DgroupId=org.apache.ambari -DartifactId=ambari-views -Dversion=1.3.0-SNAPSHOT -Dpackaging=jar
 
 #Compile view
 mvn clean package
@@ -126,18 +124,20 @@ service ambari restart
 
 ###### Option 2: Deploy views using pre-built jar files
 
-Prebuilt jars are available at https://repository.apache.org/#nexus-search;quick~ambari
+- Use the official instructions here to deploy the views
+http://hortonworks.com/hadoop/ambari/#tech-preview
+
 ```
 cd /var/lib/ambari-server/resources/views
 
 
-wget http://dev.hortonworks.com.s3.amazonaws.com/HDP-LABS/Projects/Ambari/2.0.0-Preview/contrib/views/capacity-scheduler-0.3.0-SNAPSHOT.jar
-wget http://dev.hortonworks.com.s3.amazonaws.com/HDP-LABS/Projects/Ambari/2.0.0-Preview/contrib/views/files-0.1.0-SNAPSHOT.jar
-wget http://dev.hortonworks.com.s3.amazonaws.com/HDP-LABS/Projects/Ambari/2.0.0-Preview/contrib/views/pig-0.1.0-SNAPSHOT.jar
-wget http://dev.hortonworks.com.s3.amazonaws.com/HDP-LABS/Projects/Ambari/2.0.0-Preview/contrib/views/hive-0.1.0-SNAPSHOT.jar
+wget http://public-repo-1.hortonworks.com/HDP-LABS/Projects/Views/tp1/capacity-scheduler-0.3.0-tp1.jar
+wget http://public-repo-1.hortonworks.com/HDP-LABS/Projects/Views/tp1/files-0.1.0-tp1.jar
+wget http://public-repo-1.hortonworks.com/HDP-LABS/Projects/Views/tp1/hive-0.2.0-tp1.jar
+wget http://public-repo-1.hortonworks.com/HDP-LABS/Projects/Views/tp1/pig-0.1.0-tp1.jar
 
-wget https://dl.dropboxusercontent.com/u/114020/views/jobs-1.3.0-SNAPSHOT.jar
-wget https://dl.dropboxusercontent.com/u/114020/views/tez-ambari-view-0.6.0-SNAPSHOT.jar
+
+#Both Jobs and Tez views now come with Ambari 2.0 - you just need to create instances of these 
 
 
 #on non-sandbox
@@ -148,5 +148,7 @@ service ambari restart
 
 - Once deployed, create an instance of the view in Ambari
   - http://sandbox.hortonworks.com:8080 > admin > Manage Ambari > Views > (select view) > Create instance > fill out required fields and save
-  - To see details of what to fill out in each field, you can refer to the views README on [git](https://github.com/apache/ambari/tree/trunk/contrib/views) or in [TP instructions](https://docs.google.com/a/hortonworks.com/document/d/1u6QPWLOd9Wsd_hp5iNkg0D2xpmylMia7fXpmE3iGL-0/edit#)
+  - To see details of what to fill out in each field, you can refer to the views README on [git](https://github.com/apache/ambari/tree/trunk/contrib/views) or in [official instructions](http://hortonworks.com/hadoop/ambari/#tech-preview)
   - Now the view should appear in your views area (which you can access via the square icon next to "admin" drop down on upper left)"
+  
+- Nightly (alpha) versions of prebuilt jars are also available for download at at https://repository.apache.org/#nexus-search;quick~ambari  
