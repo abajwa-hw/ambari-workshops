@@ -49,6 +49,15 @@ Documentation on stacks/services can be found [here](https://cwiki.apache.org/co
 
 - See [guide](https://github.com/abajwa-hw/security-workshops/blob/master/Setup-kerberos-Ambari-services.md) on how to use these services to enable security from Ambari UI, with minimal command line work
 
+##### Partner contributed  
+| Service name	| Github url/author | Difficulty	| Description	| Comments	|
+| ------------- | ----- | ---------- 	| ------------  | --------  |
+| [Tachyon](http://tachyon-project.org/) | [seraphin](https://github.com/seraphin/tachyon-service) | Medium | deploy/manage Tachyon from Ambari | Service to manage Tachyon in cluster mode |
+| [KPMG Analytics and Visualization Environment](https://github.com/KaveIO/AmbariKave/wiki) | [KaveIO](https://github.com/KaveIO/AmbariKave/wiki) | Medium | KPMG Analytics and Visualization Environment | The KAVE combines the power of a Lambda Stack, with a development line and core analysis tools. |
+
+
+
+
 --------------------
 
 #### Ambari Views
