@@ -197,20 +197,30 @@ ambari-server sync-ldap --all
 
 - now re-try login and notice it works. LDAP sync is now setup
 
-#### Enable kerberos on the cluster using Ambari security wizard
+
+
+
+
+
+##### Run Ambari Security wizard
 
 -  kinit as admin
 ```
 kinit admin/admin
 ``` 
-- start kerberos wizard via Ambari with below params 
+- Launch Ambari and navigate to Admin > Kerberos to start security wizard
+
+- Configure as below and click Next to accept defaults on remaining screens
   - KDC host: node1
   - realm name: HORTONWORKS.COM
   - kadmin host: node1
   - princ: admin/admin
   - pass: hortonworks
-
-
+  
+![Image](../master/screenshots/Ambari-configure-kerberos.png?raw=true)
+![Image](../master/screenshots/Ambari-install-client.png?raw=true)
+![Image](../master/screenshots/Ambari-stop-services.png?raw=true)
+**Before clicking next, you need to restart the KDC services as Ambari has stopped them**
 - to start KDC via API
 ```
 export SERVICE=KRB5
@@ -220,6 +230,19 @@ export CLUSTER=securedCluster
 curl -u admin:$PASSWORD -i -H 'X-Requested-By: ambari' -X PUT -d '{"RequestInfo": {"context" :"Start $SERVICE via REST"}, "Body": {"ServiceInfo": {"state": "STARTED"}}}' http://$AMBARI_HOST:8080/api/v1/clusters/$CLUSTER/services/$SERVICE
 curl -u admin:$PASSWORD -i -H 'X-Requested-By: ambari' -X GET http://$AMBARI_HOST:8080/api/v1/clusters/$CLUSTER/services/$SERVICE
 ```
+![Image](../master/screenshots/Ambari-kerborize-cluster.png?raw=true)
+![Image](../master/screenshots/Ambari-start-services.png?raw=true)
+
+- Once completed, kerberos is enabled
+![Image](../master/screenshots/Ambari-wizard-completed.png?raw=true)
+
+- If you see below error, restart KDC service and retry 
+```
+Failed to create keytab for ambari-qa_witbhbzl@HORTONWORKS.COM, missing cached file
+```
+
+
+##### Test kerberos
 
 - add principal for ali user
 ```
