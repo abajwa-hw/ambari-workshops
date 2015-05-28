@@ -217,9 +217,9 @@ kinit admin/admin
   - princ: admin/admin
   - pass: hortonworks
   
-![Image](../master/screenshots/Ambari-configure-kerberos.png?raw=true)
-![Image](../master/screenshots/Ambari-install-client.png?raw=true)
-![Image](../master/screenshots/Ambari-stop-services.png?raw=true)
+![Image](https://raw.githubusercontent.com/abajwa-hw/security-workshops/master/screenshots/Ambari-configure-kerberos.png?raw=true)
+![Image](https://raw.githubusercontent.com/abajwa-hw/security-workshops/master/screenshots/Ambari-install-client.png?raw=true)
+![Image](https://raw.githubusercontent.com/abajwa-hw/security-workshops/master/screenshots/Ambari-stop-services.png?raw=true)
 **Before clicking next, you need to restart the KDC services as Ambari has stopped them**
 - to start KDC via API
 ```
@@ -230,11 +230,11 @@ export CLUSTER=securedCluster
 curl -u admin:$PASSWORD -i -H 'X-Requested-By: ambari' -X PUT -d '{"RequestInfo": {"context" :"Start $SERVICE via REST"}, "Body": {"ServiceInfo": {"state": "STARTED"}}}' http://$AMBARI_HOST:8080/api/v1/clusters/$CLUSTER/services/$SERVICE
 curl -u admin:$PASSWORD -i -H 'X-Requested-By: ambari' -X GET http://$AMBARI_HOST:8080/api/v1/clusters/$CLUSTER/services/$SERVICE
 ```
-![Image](../master/screenshots/Ambari-kerborize-cluster.png?raw=true)
-![Image](../master/screenshots/Ambari-start-services.png?raw=true)
+![Image](https://raw.githubusercontent.com/abajwa-hw/security-workshops/master/screenshots/Ambari-kerborize-cluster.png?raw=true)
+![Image](https://raw.githubusercontent.com/abajwa-hw/security-workshops/master/screenshots/Ambari-start-services.png?raw=true)
 
 - Once completed, kerberos is enabled
-![Image](../master/screenshots/Ambari-wizard-completed.png?raw=true)
+![Image](https://raw.githubusercontent.com/abajwa-hw/security-workshops/master/screenshots/Ambari-wizard-completed.png?raw=true)
 
 - If you see below error, restart KDC service and retry 
 ```
