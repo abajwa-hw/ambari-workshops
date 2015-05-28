@@ -9,6 +9,14 @@
   - Ambari 2.0 security wizard (authentication)
   - Ranger as Ambari service (authorization/audit)
 
+#### Refresher on Blueprints and Ambari services
+
+- Blueprints and Ambari services were covered in more details in previous webinars.
+You can find more details on these here:
+  - http://hortonworks.com/partners/learn
+  - https://github.com/abajwa-hw/ambari-workshops#ambari-blueprintsapis
+  - https://github.com/abajwa-hw/ambari-workshops#ambari-stack-services
+
 #### Setup Ambari server/agents and submit blueprint with custom services
 
 - Setup 4 VMs with CentOS 6.5 
