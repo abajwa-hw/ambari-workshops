@@ -95,25 +95,31 @@ curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/hosts
 service ambari-agent status
 ```
 
-- register BP as securityBP for either 4 node or 1 node (depending on your setup)
+- download, edit and register BP as securityBP for either 4 node or 1 node (depending on your setup)
+  - [These](https://github.com/abajwa-hw/ambari-workshops/blob/master/blueprints/blueprint-4node-security.json#L139-154) are the values you will want to change. Especially the ldap.url: it should point to node where openldap is deployed
 ```
 #for 4 node blueprint
 wget https://raw.githubusercontent.com/abajwa-hw/ambari-workshops/master/blueprints/blueprint-4node-security.json
+vi blueprint-4node-security.json
 curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/blueprints/securityBP -d @blueprint-4node-security.json
 
 #for single node blueprint
 wget https://raw.githubusercontent.com/abajwa-hw/ambari-workshops/master/blueprints/blueprint-1node-security.json
+vi blueprint-1node-security.json
 curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/blueprints/securityBP -d @blueprint-1node-security.json
 
 ```
 - register BP as securityBP and deploy cluster with name securedCluster for either 4 node or 1 node (depending on your setup)
+  - Replace fqdn with those of your own cluster
 ```
 #for 4 node 
 wget https://raw.githubusercontent.com/abajwa-hw/ambari-workshops/master/blueprints/cluster-4node.json
+vi cluster-4node.json
 curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/clusters/securedCluster -d @cluster-4node.json
 
 #for single node 
 wget https://raw.githubusercontent.com/abajwa-hw/ambari-workshops/master/blueprints/cluster-1node.json
+vi cluster-1node.json
 curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/clusters/securedCluster -d @cluster-1node.json
 
 ```
