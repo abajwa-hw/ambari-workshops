@@ -168,8 +168,8 @@ ambari-server setup-ldap
 ```
 Using python  /usr/bin/python2.6
 Setting up LDAP properties...
-Primary URL* {host:port} : sandbox.hortonworks.com:389
-Secondary URL {host:port} : sandbox.hortonworks.com:389
+Primary URL* {host:port} : node1:389
+Secondary URL {host:port} : node1:389
 Use SSL* [true/false] (false):
 User object class* (posixAccount):
 User name attribute* (uid):
@@ -242,7 +242,7 @@ cd /tmp
 wget https://raw.githubusercontent.com/abajwa-hw/security-workshops/master/data/sample_07.csv
 wget https://raw.githubusercontent.com/abajwa-hw/security-workshops/master/data/sample_08.csv
 
-kinit -kt /etc/security/keytabs/hive.service.keytab hive/sandbox.hortonworks.com@HORTONWORKS.COM
+kinit -kt /etc/security/keytabs/hive.service.keytab hive/node1@HORTONWORKS.COM
 ```
 - Create sample tables
 ```
@@ -284,13 +284,13 @@ create user 'root'@'%' identified by 'hortonworks';
 grant all privileges on *.* to 'root'@'%' identified by 'hortonworks' with grant option; 
 flush privileges;
 set password for 'root'@'localhost'=password ('hortonworks');
-set password for 'root'@'sandbox.hortonworks.com'=password ('hortonworks');
+set password for 'root'@'node1'=password ('hortonworks');
 set password for 'root'@'127.0.0.1'=password ('hortonworks');
 exit
 ```
 - double check login
 ```
-mysql -u root -phortonworks -h sandbox.hortonworks.com
+mysql -u root -phortonworks -h node1
 ```
 
 - enable ambari to recognize mysql jar
@@ -306,13 +306,13 @@ scp /usr/share/java/mysql-connector-java-5.1.17.jar root@node4:/usr/share/java/
 ```
 - Add  service > Ranger > select same host where Mysql is
   - Ranger admin settings:
-    - Ranger DB host: sandbox.hortonworks.com
+    - Ranger DB host: node1
     - set passwords to hortonworks
   - User sync settings
-    - External URL: http://sandbox.hortonworks.com:6080
+    - External URL: http://node1:6080
 	- SYNC_LDAP_BIND_DN: cn=admin,dc=hortonworks,dc=com
 	- SYNC_LDAP_BIND_PASSWORD: hortonworks
-	- SYNC_LDAP_URL: ldap://sandbox.hortonworks.com:389
+	- SYNC_LDAP_URL: ldap://node1:389
 	- SYNC_LDAP_USER_NAME_ATTRIBUTE: uid
 	- SYNC_LDAP_USER_SEARCH_BASE: ou=Users,dc=hortonworks,dc=com
 	- SYNC_LDAP_USER_SEARCH_FILTER : (space)
