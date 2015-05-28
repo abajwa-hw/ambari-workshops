@@ -325,21 +325,25 @@ scp /usr/share/java/mysql-connector-java-5.1.17.jar root@node4:/usr/share/java/
 - add user hdfsuser to Ranger as well with password hortonworks1 (if not already exists)
 
 - create os user hdfsuser with same password: hortonworks1 (if not already exists)
+```
 adduser hdfsuser 
 passwd hdfsuser
+```
 
 - create princpal
+```
 kadmin.local -q 'addprinc -pw hdfsuser hdfsuser@HORTONWORKS.COM'
+```
 
 - HDFS configs > Advanced ranger-hdfs-plugin-properties
-Enable Ranger for HDFS: true
-Ranger repository config user: hdfsuser@HORTONWORKS.COM
-Ranger repository config password: hortonworks1
-common.name.for.certificate: (space)
+  - Enable Ranger for HDFS: true
+  - Ranger repository config user: hdfsuser@HORTONWORKS.COM
+  - Ranger repository config password: hortonworks1
+  - common.name.for.certificate: (space)
 
 - HDFS configs > Custom core-site
-hadoop.proxyuser.hive.groups=users, sales, legal, admins
-hadoop.proxyuser.hive.hosts=node1,node2,node3,node4
+  - hadoop.proxyuser.hive.groups=users, sales, legal, admins
+  - hadoop.proxyuser.hive.hosts=node1,node2,node3,node4
 
 - restart HDFS
 
