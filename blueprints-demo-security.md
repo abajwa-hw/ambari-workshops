@@ -151,6 +151,11 @@ curl -u admin:admin http://localhost:8080/api/v1/clusters/mycluster/requests/1
 ldapsearch -W -h localhost -D "cn=admin,dc=hortonworks,dc=com" -b "dc=hortonworks,dc=com"
 ```
 
+- You can access the OpenLDAP UI at http://node1/ldapadmin
+
+  - username: cn=admin,dc=hortonworks,dc=com
+  - password: hortonworks
+
 - check NSLCD
 ```
 id ali
@@ -181,11 +186,11 @@ Secondary URL {host:port} : node1:389
 Use SSL* [true/false] (false):
 User object class* (posixAccount):
 User name attribute* (uid):
-Group object class* (posixGroup):
+Group object class* (posixGroup): groupOfNames
 Group name attribute* (cn):
-Group member attribute* (memberUid):
+Group member attribute* (memberUid): member
 Distinguished name attribute* (dn):
-Base DN* : ou=Users,dc=hortonworks,dc=com
+Base DN* : ou=Users,dc=hortonworks,dc=com (change to dc=hortonworks,dc=com??)
 Referral method [follow/ignore] : follow
 Bind anonymously* [true/false] (false):
 Manager DN* : cn=admin,dc=hortonworks,dc=com
