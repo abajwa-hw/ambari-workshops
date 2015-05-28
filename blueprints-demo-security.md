@@ -1,6 +1,6 @@
 ## Blueprints demo - Automate security setup
 
-- This is a demo to show how to ease the setup of secured 4-node cluster using:
+- This is a demo to show how to ease the setup of secured 4-node (or single node) cluster using:
   - Ambari blueprints
   - Custom Ambari services for:
     - OpenLDAP
@@ -95,17 +95,34 @@ curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/hosts
 service ambari-agent status
 ```
 
-- register BP as securityBP and deploy cluster with name securedCluster for either 4 node or 1 node (depending on your setup)
+- register BP as securityBP for either 4 node or 1 node (depending on your setup)
 ```
 #for 4 node blueprint
+wget https://raw.githubusercontent.com/abajwa-hw/ambari-workshops/master/blueprints/blueprint-4node-security.json
 curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/blueprints/securityBP -d @blueprint-4node-security.json
-curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/clusters/securedCluster -d @cluster.json
+
+#for single node blueprint
+wget https://raw.githubusercontent.com/abajwa-hw/ambari-workshops/master/blueprints/blueprint-1node-security.json
+curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/blueprints/securityBP -d @blueprint-1node-security.json
+
 ```
+- register BP as securityBP and deploy cluster with name securedCluster for either 4 node or 1 node (depending on your setup)
+```
+#for 4 node 
+wget https://raw.githubusercontent.com/abajwa-hw/ambari-workshops/blob/master/blueprints/cluster-4node.json
+curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/clusters/securedCluster -d @cluster-4node.json
+
+#for single node 
+wget https://raw.githubusercontent.com/abajwa-hw/ambari-workshops/blob/master/blueprints/cluster-1node.json
+curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/clusters/securedCluster -d @cluster-1node.json
+
+```
+
 
 ```
 #for single node blueprint
-curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/blueprints/securityBP -d @blueprint-1node-security.json
-curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/clusters/securedCluster -d @cluster-1node.json
+
+
 ```
 
 
