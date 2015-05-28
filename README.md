@@ -48,6 +48,7 @@ Documentation on stacks/services can be found [here](https://cwiki.apache.org/co
 | [OpenLDAP](http://www.openldap.org) | [abajwa](https://github.com/abajwa-hw/openldap-stack) | Medium | deploy/manage OpenLDAP from Ambari | For deploying combined LDAP for Identity Management |
 
 - See [guide](https://github.com/abajwa-hw/security-workshops/blob/master/Setup-kerberos-Ambari-services.md) on how to use these services to enable security from Ambari UI, with minimal command line work
+- **NEW** See [guide](https://github.com/abajwa-hw/ambari-workshops/blob/master/blueprints-demo-security.md) on how to deploy these services via a Blueprint to easily setup a kerborized cluster with LDAP/PAM
 
 ##### Partner contributed  
 | Service name	| Github url/author | Difficulty	| Description	| Comments	|
