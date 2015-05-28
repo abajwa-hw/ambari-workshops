@@ -1,0 +1,118 @@
+{
+  "Blueprints": {
+    "stack_name": "HDP",
+    "stack_version": "2.2"
+  },
+  "host_groups": [
+    {
+      "name": "host-group-1",
+      "components": [
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "NAMENODE"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_SERVER"
+        },
+        {
+          "name": "APP_TIMELINE_SERVER"
+        },
+        {
+          "name": "HISTORYSERVER"
+        },
+        {
+          "name": "RESOURCEMANAGER"
+        },
+        {
+          "name": "SECONDARY_NAMENODE"
+        },
+        {
+          "name": "OPENLDAP_MASTER"
+        },
+        {
+          "name": "NSLCD_MASTER"
+        },
+        {
+          "name": "KRB5_MASTER"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "JOURNALNODE"
+        },
+        {
+          "name": "DATANODE"
+        }        
+      ]
+    }
+  ],
+  "configurations": [
+    {
+      "mapred-site": {
+        "mapreduce.map.memory.mb": "3584",
+        "mapreduce.reduce.memory.mb": "3584",
+        "yarn.app.mapreduce.am.command-opts": "-Xmx2867m -Dhdp.version=${hdp.version}",
+        "mapreduce.reduce.java.opts": "-Xmx2867m",
+        "mapreduce.task.io.sort.mb": "1024",
+        "mapreduce.map.java.opts": "-Xmx2867m",
+        "yarn.app.mapreduce.am.resource.mb": "3584"
+      }
+    },
+    {
+      "hdfs-site": {
+        "dfs.datanode.max.transfer.threads": "4096"
+      }
+    },
+    {
+      "yarn-env": {
+        "min_user_id": "500"
+      }
+    },
+    {
+      "core-site": {
+        "fs.s3a.impl": "org.apache.hadoop.fs.s3a.S3AFileSystem"
+      }
+    },
+    {
+      "hadoop-env": {
+        "namenode_heapsize": "5632",
+        "namenode_opt_maxnewsize": "1408",
+        "namenode_opt_newsize": "1408"
+
+      }
+    },
+    {
+      "openldap-config": {
+        "ldap.password": "hortonworks"
+      }
+    },
+    {
+      "krb5-config": {
+        "kdc.host": "sandbox.hortonworks.com",
+        "kdc.adminpassword": "hortonworks",
+        "kdb.password": "hortonworks"
+      }
+    },
+
+    {
+      "yarn-site": {
+        "yarn.scheduler.minimum-allocation-mb": "3584",
+        "yarn.scheduler.maximum-allocation-mb": "10752",
+        "yarn.nodemanager.resource.cpu-vcores": "4",
+        "yarn.nodemanager.resource.memory-mb": "10752"
+      }
+    }
+  ]
+}          

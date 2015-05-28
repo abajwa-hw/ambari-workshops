@@ -1,0 +1,14 @@
+{
+  "blueprint": "securityBP",
+  "default_password": "admin",
+  "host_groups": [
+    {
+      "hosts": [
+        {
+          "fqdn": "sandbox.hortonworks.com"
+        }
+      ],
+      "name": "host-group-1"
+    }
+  ]
+}
