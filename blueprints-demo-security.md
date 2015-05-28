@@ -202,7 +202,7 @@ ambari-server sync-ldap --all
 -  kinit as admin
 ```
 kinit admin/admin
- 
+``` 
 - start kerberos wizard via Ambari with below params 
   - KDC host: node1
   - realm name: HORTONWORKS.COM
