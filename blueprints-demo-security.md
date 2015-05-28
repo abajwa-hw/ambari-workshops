@@ -161,6 +161,8 @@ groups ali
 ```
 kadmin -p admin/admin -w hortonworks -r HORTONWORKS.COM -q "get_principal admin/admin"
 ```
+- Current blueprint does not install Hive. To run the Hive examples you will need this. Until the blueprint is updated to include Hive, use the "Add service"" wizard to add it to node1 of your cluster
+
 
 #### Setup Ambari/LDAP sync
 
