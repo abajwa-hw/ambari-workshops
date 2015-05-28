@@ -305,9 +305,10 @@ scp /usr/share/java/mysql-connector-java-5.1.17.jar root@node3:/usr/share/java/
 scp /usr/share/java/mysql-connector-java-5.1.17.jar root@node4:/usr/share/java/
 ```
 - Add  service > Ranger > select same host where Mysql is
-Ranger DB host: sandbox.hortonworks.com
-set passwords to hortonworks
-  - Rager settings
+  - Ranger admin settings:
+    - Ranger DB host: sandbox.hortonworks.com
+    - set passwords to hortonworks
+  - User sync settings
     - External URL: http://sandbox.hortonworks.com:6080
 	- SYNC_LDAP_BIND_DN: cn=admin,dc=hortonworks,dc=com
 	- SYNC_LDAP_BIND_PASSWORD: hortonworks
@@ -317,14 +318,13 @@ set passwords to hortonworks
 	- SYNC_LDAP_USER_SEARCH_FILTER : (space)
 	- SYNC_SOURCE: ldap
 
-- ####setup HDFS plugin on kerborized setup
+- Now we will setup HDFS plugin on kerborized setup
 
-- create group admins in Ranger
+- create a group "admins" in Ranger, if not exist
 
+- add user hdfsuser to Ranger as well with password hortonworks1 (if not already exists)
 
-- add user hdfsuser to Ranger as well with password hortonworks1
-
-- create os user hdfsuser with same password: hortonworks1
+- create os user hdfsuser with same password: hortonworks1 (if not already exists)
 adduser hdfsuser 
 passwd hdfsuser
 
@@ -350,35 +350,45 @@ hadoop fs -ls /
 hadoop fs -ls /tmp/hive
 
 
-- ####setup Hive plugin on kerborized setup
+- Setup Hive plugin on kerborized setup
 
-- create os user hiveuser with same password: hortonworks1
+- create os user hiveuser with same password: hortonworks1 (if not already exists)
+```
 adduser hiveuser 
 passwd hiveuser
+```
 
 - create princpal
+```
 kadmin.local -q 'addprinc -pw hiveuser hiveuser@HORTONWORKS.COM'
+```
 
 - setup Hive repo per doc
-Enable Ranger for HIVE: true
-Ranger repository config user: hiveuser@HORTONWORKS.COM
-Ranger repository config password: hortonworks1
-common.name.for.certificate: 
+  - Enable Ranger for HIVE: true
+  - Ranger repository config user: hiveuser@HORTONWORKS.COM
+  - Ranger repository config password: hortonworks1
+  - common.name.for.certificate: 
 
 
-- create policies that allow read access for sales group
-sample_07 partial
-sample_08 full
+- create policies that allow read access for sales group:
+  - sample_07 partial
+  - sample_08 full
 
 
-- May need to allow user access on /user HDFS dir
+- Allow user access on /user HDFS dir
+```
 sudo -u hdfs hadoop fs -chmod 777 /user
+```
 
-
+- Run test queries using ali user
+```
 su ali
 klist
 kinit
 beeline
-!connect jdbc:hive2://sandbox.hortonworks.com:10000/default;principal=hive/sandbox.hortonworks.com@HORTONWORKS.COM
-
 !connect jdbc:hive2://localhost:10000/default;principal=hive/node1@HORTONWORKS.COM
+
+select * from sample_08;
+select * from sample_07;
+select code, description from sample_07;
+```
