@@ -109,7 +109,7 @@ curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/bluep
 - register BP as securityBP and deploy cluster with name securedCluster for either 4 node or 1 node (depending on your setup)
 ```
 #for 4 node 
-wget https://raw.githubusercontent.com/abajwa-hw/ambari-workshops/blob/master/blueprints/cluster-4node.json
+wget https://raw.githubusercontent.com/abajwa-hw/ambari-workshops/master/blueprints/cluster-4node.json
 curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/clusters/securedCluster -d @cluster-4node.json
 
 #for single node 
