@@ -348,11 +348,12 @@ kadmin.local -q 'addprinc -pw hdfsuser hdfsuser@HORTONWORKS.COM'
 - restart HDFS
 
 
-- test HDFS audits before and after enabling policy
+- test HDFS audits before and after enabling policy to check Ranger plugin is working
+```
 su ali
 hadoop fs -ls /
 hadoop fs -ls /tmp/hive
-
+```
 
 - Setup Hive plugin on kerborized setup
 
