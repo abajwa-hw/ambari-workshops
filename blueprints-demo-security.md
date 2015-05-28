@@ -276,6 +276,7 @@ kdestroy
 - Now we will setup Ranger as Ambari service using [official doc](http://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.2.4/Ranger_Install_Over_Ambari_v224/Ranger_Install_Over_Ambari_v224.pdf)
 
 - setup existing MySQL for Ranger DB
+```
 mysql
 select host, user, password from mysql.user;
 -- only if this user does not exist create it
@@ -286,18 +287,23 @@ set password for 'root'@'localhost'=password ('hortonworks');
 set password for 'root'@'sandbox.hortonworks.com'=password ('hortonworks');
 set password for 'root'@'127.0.0.1'=password ('hortonworks');
 exit
-
+```
 - double check login
+```
 mysql -u root -phortonworks -h sandbox.hortonworks.com
+```
 
 - enable ambari to recognize mysql jar
+```
 ambari-server setup --jdbc-db=mysql --jdbc-driver=/usr/share/java/mysql-connector-java-5.1.17.jar
+```
 
 - copy mysql jar to other nodes (if any)
+```
 scp /usr/share/java/mysql-connector-java-5.1.17.jar root@node2:/usr/share/java/
 scp /usr/share/java/mysql-connector-java-5.1.17.jar root@node3:/usr/share/java/
 scp /usr/share/java/mysql-connector-java-5.1.17.jar root@node4:/usr/share/java/
-
+```
 - Add  service > Ranger > select same host where Mysql is
 Ranger DB host: sandbox.hortonworks.com
 set passwords to hortonworks
