@@ -168,6 +168,8 @@ kadmin -p admin/admin -w hortonworks -r HORTONWORKS.COM -q "get_principal admin/
 ```
 - Current blueprint does not install Hive. To run the Hive examples you will need this. Until the blueprint is updated to include Hive, use the "Add service"" wizard to add it to node1 of your cluster
 
+----------------------
+
 
 #### Setup Ambari/LDAP sync
 
@@ -181,38 +183,40 @@ ambari-server setup-ldap
 ```
 Using python  /usr/bin/python2.6
 Setting up LDAP properties...
-Primary URL* {host:port} : node1:389
-Secondary URL {host:port} : node1:389
-Use SSL* [true/false] (false):
-User object class* (posixAccount):
-User name attribute* (uid):
-Group object class* (posixGroup): groupOfNames
-Group name attribute* (cn):
-Group member attribute* (memberUid): member
-Distinguished name attribute* (dn):
-Base DN* : ou=Users,dc=hortonworks,dc=com (change to dc=hortonworks,dc=com??)
-Referral method [follow/ignore] : follow
-Bind anonymously* [true/false] (false):
-Manager DN* : cn=admin,dc=hortonworks,dc=com
+Primary URL* {host:port} (node1:389): 
+Secondary URL {host:port} (node1:389): 
+Use SSL* [true/false] (false): 
+User object class* (posixAccount): 
+User name attribute* (uid): 
+Group object class* (groupOfNames): 
+Group name attribute* (cn): 
+Group member attribute* (member): 
+Distinguished name attribute* (dn): 
+Base DN* (dc=hortonworks,dc=com): 
+Referral method [follow/ignore] (follow): 
+Bind anonymously* [true/false] (false): 
+Manager DN* (cn=admin,dc=hortonworks,dc=com): 
 Enter Manager Password* : hortonworks
 Re-enter password: hortonworks
+
 ```
 
 - Restart Ambari and start sync
 ```
 ambari-server restart
 ambari-server sync-ldap --all
+#login as admin/hortonworks now as LDAP sync has started
 ```
 
-- Login to ambari as ali/ali and notice no views
+- Login to ambari as shane/shane and notice no views
 
-- Login as admin and add ali as Ambari admin
+- Login as admin and add shane as Ambari admin
 
 - now re-try login and notice it works. LDAP sync is now setup
 
 
 
-
+-----------------------------------
 
 
 ##### Run Ambari Security wizard
