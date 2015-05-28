@@ -1,6 +1,6 @@
 ## Blueprints demo - Automate security setup
 
-- This is a demo to show how to ease the setup of secured cluster using:
+- This is a demo to show how to ease the setup of secured 4-node cluster using:
   - Ambari blueprints
   - Custom Ambari services for:
     - OpenLDAP
@@ -11,10 +11,14 @@
 
 #### Setup Ambari server/agents and submit blueprint with custom services
 
-- ensure hosts file contains all cluster hosts
-cat /etc/hosts
+- Setup 4 VMs with CentOS 6.5 
 
-- on node1 run pre-reqs and install/start ambari-server
+- Edit hosts files on all the nodes so that they contain all 4 hosts and can ping each other.
+```
+cat /etc/hosts
+```
+
+- on Ambari node (node1) run pre-reqs and install/start ambari-server
 ```
 export install_ambari_agent=true
 export install_ambari_server=true
@@ -22,13 +26,13 @@ export ambari_version=2.0.0
 curl -sSL https://raw.githubusercontent.com/seanorama/ambari-bootstrap/master/ambari-bootstrap.sh | sudo -E sh
 ```
 
-- on node2-4 run pre-reqs and install.start ambari-agents
+- on node2-4 run pre-reqs and install.start ambari-agents (assuming you have a multi-node setup)
 ```
 export ambari_server=node1
 curl -sSL https://raw.githubusercontent.com/seanorama/ambari-bootstrap/master/ambari-bootstrap.sh | sudo -E sh
 ```
 
-- The remaining steps will be executed on Ambari server node
+- The remaining steps will be executed on Ambari server node (node1)
 
 
 ```
