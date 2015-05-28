@@ -119,13 +119,6 @@ curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/clust
 ```
 
 
-```
-#for single node blueprint
-
-
-```
-
-
 - Optional - Troubleshooting: incase you need to re-run you can delete the cluster and BP
 ```
 curl -u admin:admin  -H  X-Requested-By:ambari -X DELETE http://localhost:8080/api/v1/clusters/securedCluster
@@ -163,12 +156,9 @@ groups ali
 kadmin -p admin/admin -w hortonworks -r HORTONWORKS.COM -q "get_principal admin/admin"
 ```
 
--  kinit as admin
-```
-kinit admin/admin
 ```
 
-#### Setup Ambari/LDAP sync and enable kerberos on the cluster using Ambari security wizard
+#### Setup Ambari/LDAP sync
 
 -  Now we will setup LDAP sync and kerberos using steps from [official doc](http://docs.hortonworks.com/HDPDocuments/Ambari-2.0.0.0/Ambari_Doc_Suite/Ambari_Security_v20.pdf)
 
@@ -207,9 +197,15 @@ ambari-server sync-ldap --all
 
 - Login as admin and add ali as Ambari admin
 
-- now re-try login
+- now re-try login and notice it works. LDAP sync is now setup
+
+#### Enable kerberos on the cluster using Ambari security wizard
+
+-  kinit as admin
+```
+kinit admin/admin
  
-- start kerberos wizard with below
+- start kerberos wizard via Ambari with below params 
   - KDC host: node1
   - realm name: HORTONWORKS.COM
   - kadmin host: node1
