@@ -39,9 +39,7 @@ curl -sSL https://raw.githubusercontent.com/seanorama/ambari-bootstrap/master/am
 yum install -y git
 ```
 
-- Install folder for custom services
-
-- For security
+- Install folder for custom services for security
 ```
 cd /var/lib/ambari-server/resources/stacks/HDP/2.2/services
 git clone https://github.com/abajwa-hw/openldap-stack.git   
