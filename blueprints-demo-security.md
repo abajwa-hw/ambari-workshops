@@ -1,3 +1,16 @@
+## Blueprints demo - Automate security setup
+
+- This is a demo to show how to ease the setup of secured cluster using:
+  - Ambari blueprints
+  - Custom Ambari services for:
+    - OpenLDAP
+    - KDC
+    - NSLCD
+  - Ambari 2.0 security wizard (authentication)
+  - Ranger as Ambari service (authorization/audit)
+
+#### Setup Ambari server/agents and submit blueprint with custom services
+
 - ensure hosts file contains all cluster hosts
 cat /etc/hosts
 
@@ -135,6 +148,8 @@ kadmin -p admin/admin -w hortonworks -r HORTONWORKS.COM -q "get_principal admin/
 kinit admin/admin
 ```
 
+#### Setup Ambari/LDAP sync and enable kerberos on the cluster using Ambari security wizard
+
 -  Now we will setup LDAP sync and kerberos using steps from [official doc](http://docs.hortonworks.com/HDPDocuments/Ambari-2.0.0.0/Ambari_Doc_Suite/Ambari_Security_v20.pdf)
 
 - First setup sync Ambari with LDAP
@@ -207,7 +222,7 @@ kinit
 hadoop fs -ls /
 ```
 
-- Downlaod sample data
+- Download sample data
 ```
 cd /tmp
 wget https://raw.githubusercontent.com/abajwa-hw/security-workshops/master/data/sample_07.csv
@@ -242,7 +257,7 @@ exit;
 kdestroy
 ```
 
-#### Ranger setup
+#### Ranger setup via Ambari
 
 - Now we will setup Ranger as Ambari service using [official doc](http://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.2.4/Ranger_Install_Over_Ambari_v224/Ranger_Install_Over_Ambari_v224.pdf)
 
