@@ -421,3 +421,13 @@ select * from sample_08;
 select * from sample_07;
 select code, description from sample_07;
 ```
+
+#### Extras
+
+- Install Ambari views 
+  - Official doc [here](http://hortonworks.com/wp-content/uploads/2015/04/AmbariUserViewsTechPreview_v1.pdf). 
+  - Screenshots available [here](https://github.com/abajwa-hw/ambari-workshops/blob/master/contributed-views.md#views-screenshots)
+  - Cheatsheet [here](https://github.com/abajwa-hw/ambari-workshops/blob/master/contributed-views.md#option-2-deploy-views-using-pre-built-jar-files)
+  
+
+
