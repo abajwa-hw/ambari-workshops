@@ -156,8 +156,6 @@ groups ali
 kadmin -p admin/admin -w hortonworks -r HORTONWORKS.COM -q "get_principal admin/admin"
 ```
 
-```
-
 #### Setup Ambari/LDAP sync
 
 -  Now we will setup LDAP sync and kerberos using steps from [official doc](http://docs.hortonworks.com/HDPDocuments/Ambari-2.0.0.0/Ambari_Doc_Suite/Ambari_Security_v20.pdf)
