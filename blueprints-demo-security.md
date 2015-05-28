@@ -48,8 +48,9 @@ git clone https://github.com/abajwa-hw/kdc-stack.git
 cd
 ```
 - prereq for kerborizing cluster: download and unzip JCE from [here](http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html)
+```
 unzip -o -j -q /root/scripts/UnlimitedJCEPolicyJDK7.zip -d /usr/lib/jvm/jre-1.7.0-openjdk.x86_64/lib/security/
-
+```
 
 - Optional: if component has start dependencies on others, then add here:
 ```
