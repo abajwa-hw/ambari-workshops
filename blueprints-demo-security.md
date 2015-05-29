@@ -1,6 +1,6 @@
 ## Blueprints demo - Automate security setup
 
-- This is a demo to show how to ease the setup of secured 4-node (or single node) cluster using:
+- This demo is part of Ambari webinar and shows how to ease the setup of secured 4-node (or single node) cluster using:
   - Ambari blueprints
   - Custom Ambari services for:
     - OpenLDAP
@@ -8,6 +8,10 @@
     - NSLCD
   - Ambari 2.0 security wizard (authentication)
   - Ranger as Ambari service (authorization/audit)
+
+- The webinar recording is available at http://hortonworks.com/partners/learn/#ambari2
+
+- For more on security, full Security workshops on multiple HDP versions are available [here](https://github.com/abajwa-hw/security-workshops/blob/master/README.md)
 
 #### Refresher on Blueprints and Ambari services
 
@@ -71,7 +75,10 @@ service ambari-server restart
 service ambari-agent restart
 ```
 
--  (Optional) - If you don't have a blueprint, you can generate BP and cluster file using Ambari recommendations. For more details, see [bootstrap script git](https://github.com/seanorama/ambari-bootstrap/tree/master/deploy)
+-  (Optional but recommended) - If you don't have a blueprint, you can generate BP and cluster file using Ambari recommendations. 
+In this example below we are providing some sample blueprints but may need to be configured for your env
+
+For more details, on the bootstrap scripts see [bootstrap script git](https://github.com/seanorama/ambari-bootstrap/tree/master/deploy)
 ```
 yum install -y python-argparse
 git clone https://github.com/seanorama/ambari-bootstrap.git
