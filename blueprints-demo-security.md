@@ -251,6 +251,15 @@ kinit admin/admin
   - princ: admin/admin
   - pass: hortonworks
   
+- If you encounter errors (like below), restart KDC service and retry 
+```
+Failed to create keytab for ambari-qa_witbhbzl@HORTONWORKS.COM, missing cached file
+```  
+  - to restart KDC/kadmin
+```
+service krb5kdc restart; service kadmin restart;
+```  
+
 ![Image](https://raw.githubusercontent.com/abajwa-hw/security-workshops/master/screenshots/Ambari-configure-kerberos.png?raw=true)
 ![Image](https://raw.githubusercontent.com/abajwa-hw/security-workshops/master/screenshots/Ambari-install-client.png?raw=true)
 ![Image](https://raw.githubusercontent.com/abajwa-hw/security-workshops/master/screenshots/Ambari-stop-services.png?raw=true)
@@ -265,10 +274,7 @@ service krb5kdc start; service kadmin start;
 - Once completed, kerberos is enabled
 ![Image](https://raw.githubusercontent.com/abajwa-hw/security-workshops/master/screenshots/Ambari-wizard-completed.png?raw=true)
 
-- If you see below error, restart KDC service and retry 
-```
-Failed to create keytab for ambari-qa_witbhbzl@HORTONWORKS.COM, missing cached file
-```
+
 
 
 ##### Test kerberos
