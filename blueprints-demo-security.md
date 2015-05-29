@@ -92,11 +92,13 @@ bash ./deploy-recommended-cluster.bash
 
 cd tmpdir*
 
-#edit the blueprint to add custom COMPONENT names (not service name) e.g. XXX_MASTER
+#edit the blueprint to add custom COMPONENT names (not service name) e.g. XXX_MASTER. You can use sample blueprints provided below to see how to add the custom services.
 vi blueprint.json
 
 #edit cluster file if needed
 vi cluster.json
+
+
 ```
 
 
