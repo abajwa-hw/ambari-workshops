@@ -106,4 +106,6 @@ A portable and cohesive definition of a cluster (for sharing best practices on c
   - [Sample automation](https://github.com/seanorama/ambari-bootstrap) to install/configure Ambari Agent, Ambari Server and run pre-req checks
   - [API Examples](https://github.com/seanorama/ambari-bootstrap/tree/master/api-examples) including:
     - Basics, changing password, creating blueprints, deploying clusters, changing configurations
+  - [Guide](https://github.com/abajwa-hw/ambari-workshops/blob/master/blueprints-demo-security.md) on how to deploy custom services via a Blueprint to easily setup a kerborized cluster with OpenLDAP/NSLCD/KDC
   - [Older tutorial](http://hortonworks.com/blog/ambari-blueprints-delivers-missing-component-cluster-provisioning/)
+  
