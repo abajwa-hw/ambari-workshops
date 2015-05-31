@@ -121,6 +121,7 @@
       "openldap-config": {
         "ldap.password": "hortonworks",
         "ldap.domain": "dc=hortonworks,dc=com",
+        "ldap.ou": "hortonworks.com",        
         "ldap.adminuser": "admin"
       }
     },   
