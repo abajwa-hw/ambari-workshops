@@ -122,7 +122,7 @@ service ambari-agent status
 ```
 
 - Download, edit and register BP as securityBP for either 4 node or 1 node (depending on your setup)
-  - [These](https://github.com/abajwa-hw/ambari-workshops/blob/master/blueprints/blueprint-4node-security.json#L122-142) are the values you will want to change. The "node1" references should be changed to point to the nodes where KDC/openldap deployed and the realm/domain/passwords for these services
+  - [These](https://github.com/abajwa-hw/ambari-workshops/blob/master/blueprints/blueprint-4node-security.json#L122-143) are the values you will want to change. The "node1" references should be changed to point to the nodes where KDC/openldap deployed and the realm/domain/passwords for these services
 ```
 #for 4 node blueprint
 wget https://raw.githubusercontent.com/abajwa-hw/ambari-workshops/master/blueprints/blueprint-4node-security.json
