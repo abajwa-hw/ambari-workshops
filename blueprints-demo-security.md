@@ -21,6 +21,13 @@ You can find more details on these here:
   - https://github.com/abajwa-hw/ambari-workshops#ambari-blueprintsapis
   - https://github.com/abajwa-hw/ambari-workshops#ambari-stack-services
 
+#### High level steps
+- Setup Ambari server/agents and submit blueprint with custom services
+- Setup Ambari/LDAP sync
+- Run Ambari Security wizard to enable kerberos
+- Ranger setup via Ambari
+
+ 
 #### Setup Ambari server/agents and submit blueprint with custom services
 
 - Setup 4 VMs with CentOS 6.5 
@@ -77,8 +84,8 @@ service ambari-server restart
 service ambari-agent restart
 ```
 
--  (Optional but recommended) - If you don't have a blueprint, you can generate BP and cluster file using Ambari recommendations. 
-In this example below we are providing some sample blueprints but may need to be configured for your env
+-  (Optional) - In general you can generate BP and cluster file using Ambari recommendations. 
+In this example we are providing some sample blueprints which you can edit, so this is not needed
 
 For more details, on the bootstrap scripts see [bootstrap script git](https://github.com/seanorama/ambari-bootstrap/tree/master/deploy)
 ```
@@ -86,7 +93,7 @@ yum install -y python-argparse
 git clone https://github.com/seanorama/ambari-bootstrap.git
 
 #optional - limit the services for faster deployment
-export ambari_services="HDFS MAPREDUCE2 YARN ZOOKEEPER"
+export ambari_services="HDFS MAPREDUCE2 YARN ZOOKEEPER HIVE"
 
 export deploy=false
 cd ambari-bootstrap/deploy
@@ -94,7 +101,7 @@ bash ./deploy-recommended-cluster.bash
 
 cd tmpdir*
 
-#edit the blueprint to add custom COMPONENT names (not service name) e.g. XXX_MASTER. You can use sample blueprints provided below to see how to add the custom services.
+#edit the blueprint to add custom COMPONENT names (not service name) e.g. XXX_MASTER and configurations. You can use sample blueprints provided below to see how to add the custom services.
 vi blueprint.json
 
 #edit cluster file if needed
@@ -115,7 +122,7 @@ service ambari-agent status
 ```
 
 - Download, edit and register BP as securityBP for either 4 node or 1 node (depending on your setup)
-  - [These](https://github.com/abajwa-hw/ambari-workshops/blob/master/blueprints/blueprint-4node-security.json#L139-154) are the values you will want to change. The "node1" references should be changed to point to the nodes where KDC/openldap deployed
+  - [These](https://github.com/abajwa-hw/ambari-workshops/blob/master/blueprints/blueprint-4node-security.json#L122-142) are the values you will want to change. The "node1" references should be changed to point to the nodes where KDC/openldap deployed and the realm/domain/passwords for these services
 ```
 #for 4 node blueprint
 wget https://raw.githubusercontent.com/abajwa-hw/ambari-workshops/master/blueprints/blueprint-4node-security.json
@@ -129,7 +136,7 @@ curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/bluep
 
 ```
 - Download, edit and deploy cluster with name securedCluster for either 4 node or 1 node (depending on your setup)
-  - You need to edit the json file and replace fqdn with those of your own cluster
+  - You need to edit the json file and replace fqdn with those of your own cluster. Also you can edit the default password
 ```
 #for 4 node 
 wget https://raw.githubusercontent.com/abajwa-hw/ambari-workshops/master/blueprints/cluster-4node.json
@@ -185,7 +192,6 @@ groups ali
 ```
 kadmin -p admin/admin -w hortonworks -r HORTONWORKS.COM -q "get_principal admin/admin"
 ```
-- Current blueprint does not install Hive. To run the Hive examples you will need this. Until the blueprint is updated to include Hive, use the "Add service"" wizard to add it to node1 of your cluster
 
 ----------------------
 

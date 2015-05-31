@@ -78,6 +78,21 @@
         {
           "name": "KRB5_MASTER"
         },
+        { 
+	      "name": "HIVE_METASTORE" 
+        },
+        { 
+          "name": "MYSQL_SERVER" 
+        },
+        { 
+          "name": "HIVE_SERVER" 
+        },
+        { 
+          "name": "WEBHCAT_SERVER" 
+        },
+        { 
+          "name": "HIVE_CLIENT" 
+        },
         {
           "name": "MAPREDUCE2_CLIENT"
         }
@@ -103,63 +118,29 @@
   ],
   "configurations": [
     {
-      "mapred-site": {
-        "mapreduce.map.memory.mb": "3584",
-        "mapreduce.reduce.memory.mb": "3584",
-        "yarn.app.mapreduce.am.command-opts": "-Xmx2867m -Dhdp.version=${hdp.version}",
-        "mapreduce.reduce.java.opts": "-Xmx2867m",
-        "mapreduce.task.io.sort.mb": "1024",
-        "mapreduce.map.java.opts": "-Xmx2867m",
-        "yarn.app.mapreduce.am.resource.mb": "3584"
-      }
-    },
-    {
-      "hdfs-site": {
-        "dfs.datanode.max.transfer.threads": "4096"
-      }
-    },
-    {
-      "yarn-env": {
-        "min_user_id": "500"
-      }
-    },
-    {
-      "core-site": {
-        "fs.s3a.impl": "org.apache.hadoop.fs.s3a.S3AFileSystem"
-      }
-    },
-    {
-      "hadoop-env": {
-        "namenode_heapsize": "5632",
-        "namenode_opt_maxnewsize": "1408",
-        "namenode_opt_newsize": "1408"
-
-      }
-    },
-    {
       "openldap-config": {
-        "ldap.password": "hortonworks"
+        "ldap.password": "hortonworks",
+        "ldap.domain": "dc=hortonworks,dc=com",
+        "ldap.adminuser": "admin"
       }
     },   
     {
       "krb5-config": {
         "kdc.host": "node1",
+        "kdc.realm": "HORTONWORKS.COM",
+        "kdc.domain": "hortonworks.com",
+        "kdc.admin": "admin/admin",
         "kdc.adminpassword": "hortonworks",
         "kdb.password": "hortonworks"
       }
     },
     {
       "nslcd-config": {
-        "ldap.url": "node1:389"
+        "ldap.url": "node1:389",
+        "distinguished.name":"dc=hortonworks,dc=com",
+        "groups.name":"ou=Groups,dc=hortonworks,dc=com",
+        "users.name":"ou=Users,dc=hortonworks,dc=com"
       }
-    }, 
-    {
-      "yarn-site": {
-        "yarn.scheduler.minimum-allocation-mb": "3584",
-        "yarn.scheduler.maximum-allocation-mb": "10752",
-        "yarn.nodemanager.resource.cpu-vcores": "4",
-        "yarn.nodemanager.resource.memory-mb": "10752"
-      }
-    }
+    } 
   ]
 }          
