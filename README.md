@@ -27,7 +27,6 @@ Documentation on stacks/services can be found [here](https://cwiki.apache.org/co
 | [Maven](http://maven.apache.org) | [randerzander](https://github.com/randerzander/maven-stack) |  Beginner | Deploy the bits for this developer tool on a cluster | Most basic 'client' service example of how to use Ambari to install software bits on cluster (w/o starting a daemon service)  |
 | [VNC](http://en.wikipedia.org/wiki/Virtual_Network_Computing)  | [abajwa](https://github.com/abajwa-hw/vnc-stack) | Easy | deploy VNC service and developer tools | Remote desktop into your sandbox and start coding with Eclipse/IntelliJ on Spark/Storm | 
 | [OpenTSDB](http://opentsdb.net) | [abajwa](https://github.com/abajwa-hw/opentsdb-service) | Easy | Deploy/monitor timeseries DB on top of HBase |  Implement your own Google Finance-like functionality on HDP |
-| [Solr](http://lucene.apache.org/solr/)  | [abajwa](https://github.com/abajwa-hw/solr-stack) | Easy | deploy/manage Solr from Ambari  | Detailed example of a *custom* Ambari service that uses pidfiles to monitor the service | 
 | HDFS Vizualizer | [abajwa](https://github.com/abajwa-hw/hdpviz) | Medium | deploy/manage D3.js webapp from Ambari | Inspired by [Twitters HDFS du project](https://blog.twitter.com/2012/visualizing-hadoop-with-hdfs-du) - see below for view details. Another *custom* service example|
 | Document crawler | [abajwa](https://github.com/abajwa-hw/search-demo) | Medium | deploy/manage Angular.js webapp from Ambari | search through Word, PDF etc docs stored in HDFS via Ambari - see below for view details. Another *custom* service example |
 | Official component services | [Apache](https://github.com/apache/ambari/tree/trunk/ambari-server/src/main/resources/stacks/HDP/2.2/services)| Advanced | Browse the code for the HDP services | Kafka and Knox are good examples to follow |
@@ -50,11 +49,19 @@ Documentation on stacks/services can be found [here](https://cwiki.apache.org/co
 - See [guide](https://github.com/abajwa-hw/security-workshops/blob/master/Setup-kerberos-Ambari-services.md) on how to use these services to enable security from Ambari UI, with minimal command line work
 - **NEW** See [guide](https://github.com/abajwa-hw/ambari-workshops/blob/master/blueprints-demo-security.md) on how to deploy these services via a Blueprint to easily setup a kerborized cluster with LDAP/PAM
 
+##### Search related services 
+| Service name	| Github url/author | Difficulty	| Description	| Comments	|
+| ------------- | ----- | ---------- 	| ------------  | --------  |
+| [Solr](http://lucene.apache.org/solr/)  | [abajwa](https://github.com/abajwa-hw/solr-stack) | Easy | deploy/manage Solr from Ambari  | Detailed example of a *custom* Ambari service that uses pidfiles to monitor the service. Will be productized by our partner LucidWorks (see below) | 
+| [Elastic Search](http://lucene.apache.org/solr/)  | [saurabhmishra](https://github.com/saurabhmishra/ambarielasticsearch) | Medium | deploy/manage ElasticSearch from Ambari  |  | 
+
+
 ##### Partner contributed  
 | Service name	| Github url/author | Difficulty	| Description	| Comments	|
 | ------------- | ----- | ---------- 	| ------------  | --------  |
 | [Tachyon](http://tachyon-project.org/) | [seraphin](https://github.com/seraphin/tachyon-service) | Medium | deploy/manage Tachyon from Ambari | Service to manage Tachyon in cluster mode |
 | [KPMG Analytics and Visualization Environment](https://github.com/KaveIO/AmbariKave/wiki) | [KaveIO](https://github.com/KaveIO/AmbariKave/wiki) | Medium | KPMG Analytics and Visualization Environment | The KAVE combines the power of a Lambda Stack, with a development line and core analysis tools. |
+| [Solr](https://github.com/LucidWorks/solr-stack)| [LucidWorks](https://github.com/LucidWorks/solr-stack) | Easy | deploy/manage Solr from Ambari | Will be added  to HDP in future | 
 
 
 
@@ -76,6 +83,7 @@ Documentation on Ambari views can be found [here](https://cwiki.apache.org/confl
 | [Hive](https://cwiki.apache.org/confluence/display/Hive/Home) query | [randerzander](https://github.com/randerzander/servlet-view-example) | Medium | submit Hive SQL from Ambari | Basic example of java servlet view |
 | Document Crawler | [pcodding](https://github.com/abajwa-hw/search-demo) | Medium | search through Word, PDF etc docs stored in HDFS via Ambari | Example of view written in Node.js/Angular JS |
 | HDFS visualizer | [dp1140a](https://github.com/abajwa-hw/hdpviz) | Medium | Navigate HDFS visually using D3 charts via Ambari | Node/D3/Grunt JS webapp that invokes WebHDFS APIs. Inspired by [Twitters HDFS du project](https://blog.twitter.com/2012/visualizing-hadoop-with-hdfs-du) |
+| Phoenix metrics charts | [randerzander](https://github.com/randerzander/rt-view) | Meduim | An example of an Ambari View with a simple UI for polling Phoenix and displaying realtime metrics. | |
 | Apache sample views | [Apache](https://github.com/apache/ambari/tree/trunk/ambari-views/examples) | Varying | Sample views from Apache Ambari page | Starts with examples of basic html views and advances to java servlet views with configs|
 
 ##### Contributed views
