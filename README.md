@@ -53,7 +53,7 @@ Documentation on stacks/services can be found [here](https://cwiki.apache.org/co
 | Service name	| Github url/author | Difficulty	| Description	| Comments	|
 | ------------- | ----- | ---------- 	| ------------  | --------  |
 | [Solr](http://lucene.apache.org/solr/)  | [abajwa](https://github.com/abajwa-hw/solr-stack) | Easy | deploy/manage Solr from Ambari  | Detailed example of a *custom* Ambari service that uses pidfiles to monitor the service. Will be productized by our partner LucidWorks (see below) | 
-| [Elastic Search](http://lucene.apache.org/solr/)  | [saurabhmishra](https://github.com/saurabhmishra/ambarielasticsearch) | Medium | deploy/manage ElasticSearch from Ambari  |  | 
+| [Elastic Search](https://www.elastic.co/)  | [saurabhmishra](https://github.com/saurabhmishra/ambarielasticsearch) | Medium | deploy/manage ElasticSearch from Ambari  |  | 
 
 
 ##### Partner contributed  
