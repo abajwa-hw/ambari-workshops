@@ -1,0 +1,146 @@
+{
+  "Blueprints": {
+    "stack_name": "HDP",
+    "stack_version": "2.2"
+  },
+  "host_groups": [
+    {
+      "name": "host-group-3",
+      "components": [
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "JOURNALNODE"
+        },
+        {
+          "name": "KRB5_MASTER"
+        },        
+        {
+          "name": "NSLCD_MASTER"
+        },        
+        {
+          "name": "DATANODE"
+        }
+
+      ]
+    },
+    {
+      "name": "host-group-2",
+      "components": [
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "JOURNALNODE"
+        },
+        {
+          "name": "OPENLDAP_MASTER"
+        },        
+        {
+          "name": "NSLCD_MASTER"
+        },        
+        {
+          "name": "DATANODE"
+        }
+      ]
+    },
+    {
+      "name": "host-group-1",
+      "components": [
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "NAMENODE"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_SERVER"
+        },
+        {
+          "name": "APP_TIMELINE_SERVER"
+        },
+        {
+          "name": "HISTORYSERVER"
+        },
+        {
+          "name": "RESOURCEMANAGER"
+        },
+        {
+          "name": "SECONDARY_NAMENODE"
+        },
+        {
+          "name": "NSLCD_MASTER"
+        },
+        { 
+	      "name": "HIVE_METASTORE" 
+        },
+        { 
+          "name": "MYSQL_SERVER" 
+        },
+        { 
+          "name": "HIVE_SERVER" 
+        },
+        { 
+          "name": "WEBHCAT_SERVER" 
+        },
+        { 
+          "name": "HIVE_CLIENT" 
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        }
+      ]
+    },
+    {
+      "name": "host-group-4",
+      "components": [
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "JOURNALNODE"
+        },
+        {
+          "name": "NSLCD_MASTER"
+        },        
+        {
+          "name": "DATANODE"
+        }
+      ]
+    }
+  ],
+  "configurations": [
+    {
+      "openldap-config": {
+        "ldap.password": "hortonworks",
+        "ldap.domain": "dc=example,dc=com",
+        "ldap.ou": "example.com",        
+        "ldap.adminuser": "admin"
+      }
+    },   
+    {
+      "krb5-config": {
+        "kdc.realm": "EXAMPLE.COM",
+        "kdc.domain": "example.com",
+        "kdc.admin": "admin/admin",
+        "kdc.adminpassword": "hortonworks",
+        "kdb.password": "hortonworks"
+      }
+    },
+    {
+      "nslcd-config": {
+        "ldap.url": "node2:389",
+        "distinguished.name":"dc=hortonworks,dc=com",
+        "groups.name":"ou=Groups,dc=hortonworks,dc=com",
+        "users.name":"ou=Users,dc=hortonworks,dc=com"
+      }
+    } 
+  ]
+}          
