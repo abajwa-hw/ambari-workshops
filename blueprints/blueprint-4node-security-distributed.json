@@ -137,9 +137,9 @@
     {
       "nslcd-config": {
         "ldap.url": "node2:389",
-        "distinguished.name":"dc=hortonworks,dc=com",
-        "groups.name":"ou=Groups,dc=hortonworks,dc=com",
-        "users.name":"ou=Users,dc=hortonworks,dc=com"
+        "distinguished.name":"dc=example,dc=com",
+        "groups.name":"ou=Groups,dc=example,dc=com",
+        "users.name":"ou=Users,dc=example,dc=com"
       }
     } 
   ]
