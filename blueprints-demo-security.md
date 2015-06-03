@@ -126,20 +126,20 @@ vi cluster.json
 
 #### Submit blueprint with custom services
 
-- Download, edit and register BP as securityBP for either one of the below blueprints
+- Download, edit and register BP as securityBP for either one of the 3 below blueprint examples
   - [These](https://github.com/abajwa-hw/ambari-workshops/blob/master/blueprints/blueprint-4node-security.json#L122-143) are the values you will want to change. The "nodeX" reference should be changed to point to the node where openldap will be deployed. Also modify the realm/domain/passwords for these services
 ```
-#for 4 node blueprint (all services on single master using HORTONWORKS.COM as realm)
+#Option 1: for 4 node blueprint (all services on single master; realm is HORTONWORKS.COM)
 wget https://raw.githubusercontent.com/abajwa-hw/ambari-workshops/master/blueprints/blueprint-4node-security.json
 vi blueprint-4node-security.json
 curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/blueprints/securityBP -d @blueprint-4node-security.json
 
-#for 4 node blueprint  (have openldap/kdc services on non-master nodes using EXAMPLE.COM as realm)
+#Option 2: for 4 node blueprint  (have openldap/kdc services on non-master nodes; realm is EXAMPLE.COM)
 wget https://raw.githubusercontent.com/abajwa-hw/ambari-workshops/master/blueprints/blueprint-4node-security-distributed.json
 vi blueprint-4node-security-distributed.json
 curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/blueprints/securityBP -d @blueprint-4node-security-distributed.json
 
-#for single node blueprint
+#Option 3: for single node blueprint (all services on single node; realm is HORTONWORKS.COM)
 wget https://raw.githubusercontent.com/abajwa-hw/ambari-workshops/master/blueprints/blueprint-1node-security.json
 vi blueprint-1node-security.json
 curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/blueprints/securityBP -d @blueprint-1node-security.json
