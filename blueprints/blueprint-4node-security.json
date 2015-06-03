@@ -127,7 +127,6 @@
     },   
     {
       "krb5-config": {
-        "kdc.host": "node1",
         "kdc.realm": "HORTONWORKS.COM",
         "kdc.domain": "hortonworks.com",
         "kdc.admin": "admin/admin",

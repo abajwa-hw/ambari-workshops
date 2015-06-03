@@ -84,7 +84,6 @@
     },   
     {
       "krb5-config": {
-        "kdc.host": "sandbox.hortonworks.com",
         "kdc.realm": "HORTONWORKS.COM",
         "kdc.domain": "hortonworks.com",
         "kdc.admin": "admin/admin",
