@@ -160,6 +160,7 @@ curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/clust
 
 ```
 
+#### Troubleshoot/Monitor the install
 
 - Optional - Troubleshooting: incase you need to re-run you can delete the cluster and BP
 ```
@@ -179,6 +180,9 @@ curl -u admin:admin http://localhost:8080/api/v1/clusters/mycluster/requests/1
 ```
 
 - open ambari UI and monitor install: http://node1:8080 and wait until install completes
+
+
+#### Post-install checks
 
 -  After OpenLDAP, KDC and NSLCD services are up...
 
