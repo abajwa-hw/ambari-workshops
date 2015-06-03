@@ -28,7 +28,7 @@ You can find more details on these here:
 - Ranger setup via Ambari
 
  
-#### Setup Ambari server/agents and submit blueprint with custom services
+#### Setup Ambari server/agents  
 
 - Setup 4 VMs with CentOS 6.5 
 
@@ -53,6 +53,7 @@ curl -sSL https://raw.githubusercontent.com/seanorama/ambari-bootstrap/master/am
 
 - The remaining steps will be executed on Ambari server node (node1)
 
+#### Copy custom services dirs into Ambari server
 
 ```
 yum install -y git
@@ -84,6 +85,18 @@ service ambari-server restart
 service ambari-agent restart
 ```
 
+- Confirm the Agent hosts are registered with the Server. Should return all 4 nodes
+```
+curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/hosts
+```
+
+- ensure agent on ambari node is up
+```
+service ambari-agent status
+```
+
+#### (Optional) - Generate vanilla blueprint for this env
+
 -  (Optional) - In general you can generate BP and cluster file using Ambari recommendations. 
 In this example we are providing some sample blueprints which you can edit, so this is not needed
 
@@ -107,27 +120,24 @@ vi blueprint.json
 #edit cluster file if needed
 vi cluster.json
 
-
 ```
 
 
-- Confirm the Agent hosts are registered with the Server. Should return all 4 nodes
-```
-curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/hosts
-```
 
-- ensure agent on ambari node is up
-```
-service ambari-agent status
-```
+#### Submit blueprint with custom services
 
-- Download, edit and register BP as securityBP for either 4 node or 1 node (depending on your setup)
-  - [These](https://github.com/abajwa-hw/ambari-workshops/blob/master/blueprints/blueprint-4node-security.json#L122-143) are the values you will want to change. The "node1" references should be changed to point to the nodes where KDC/openldap deployed and the realm/domain/passwords for these services
+- Download, edit and register BP as securityBP for either one of the below blueprints
+  - [These](https://github.com/abajwa-hw/ambari-workshops/blob/master/blueprints/blueprint-4node-security.json#L122-143) are the values you will want to change. The "nodeX" reference should be changed to point to the node where openldap will be deployed. Also modify the realm/domain/passwords for these services
 ```
-#for 4 node blueprint
+#for 4 node blueprint (all services on single master using HORTONWORKS.COM as realm)
 wget https://raw.githubusercontent.com/abajwa-hw/ambari-workshops/master/blueprints/blueprint-4node-security.json
 vi blueprint-4node-security.json
 curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/blueprints/securityBP -d @blueprint-4node-security.json
+
+#for 4 node blueprint  (have openldap/kdc services on non-master nodes using EXAMPLE.COM as realm)
+wget https://raw.githubusercontent.com/abajwa-hw/ambari-workshops/master/blueprints/blueprint-4node-security-distributed.json
+vi blueprint-4node-security-distributed.json
+curl -u admin:admin -H  X-Requested-By:ambari http://localhost:8080/api/v1/blueprints/securityBP -d @blueprint-4node-security-distributed.json
 
 #for single node blueprint
 wget https://raw.githubusercontent.com/abajwa-hw/ambari-workshops/master/blueprints/blueprint-1node-security.json
