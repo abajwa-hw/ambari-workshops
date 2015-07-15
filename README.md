@@ -62,7 +62,7 @@ Documentation on stacks/services can be found [here](https://cwiki.apache.org/co
 | [Tachyon](http://tachyon-project.org/) | [seraphin](https://github.com/seraphin/tachyon-service) | Medium | deploy/manage Tachyon from Ambari | Service to manage Tachyon in cluster mode |
 | [KPMG Analytics and Visualization Environment](https://github.com/KaveIO/AmbariKave/wiki) | [KaveIO](https://github.com/KaveIO/AmbariKave/wiki) | Medium | KPMG Analytics and Visualization Environment | The KAVE combines the power of a Lambda Stack, with a development line and core analysis tools. |
 | [Solr](https://github.com/LucidWorks/solr-stack)| [LucidWorks](https://github.com/LucidWorks/solr-stack) | Easy | deploy/manage Solr from Ambari | Will be added  to HDP in future | 
-
+| [Cask](http://cask.co/)|[Cask service](https://github.com/caskdata/ambari-cdap-service)| Medium | Deploy Cask |  |
 
 
 
