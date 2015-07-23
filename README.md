@@ -65,6 +65,28 @@ Documentation on stacks/services can be found [here](https://cwiki.apache.org/co
 | [Cask](http://cask.co/)|[Cask service](https://github.com/caskdata/ambari-cdap-service)| Medium | Deploy Cask |  |
 
 
+##### Developer FAQ:
+
+- How to enable debug logging?
+
+In /etc/ambari-agent/conf/ambari-agent.ini set loglevel=DEBUG and run ‘service ambari-agent restart'
+
+- How to test your service outside of Ambari?
+
+After enabling debugging you can see the full command that Ambari invokes for each of the INSTALL, START, STOP operations for your service which can be run from the command line e.g.  
+While you are installing service via wizard the below will give the full commands to invoke master.py:
+```
+ps -ef | grep <servicename>
+```
+
+e.g.
+```
+/usr/bin/python2.6 /var/lib/ambari-agent/cache/stacks/HDP/2.3/services/zeppelin-stack/package/scripts/master.py INSTALL /var/lib/ambari-agent/data/command-2502.json /var/lib/ambari-agent/cache/stacks/HDP/2.3/services/zeppelin-stack/package /var/lib/ambari-agent/data/structured-out-2502.json INFO /var/lib/ambari-agent/data/tmp
+```
+
+- In case service install fails, how to delete/unregister it from Ambari?
+
+You will have to manually remove any artifacts created by service. To unregister the service from Ambari, see example here: https://github.com/hortonworks-gallery/ambari-zeppelin-service#remove-zeppelin-service
 
 --------------------
 
