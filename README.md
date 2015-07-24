@@ -1,7 +1,7 @@
 ## Ambari Extensibility via Stacks, Views and Blueprints Workshop 
 
 These demos are part of a webinar on Ambari. 
-- Slides and webinar recording available at http://hortonworks.com/partners/learn/
+- Slides and webinar recording available at http://hortonworks.com/partners/learn/#ambari
 - Blog article on the topics presented in the webinar is available [here](http://hortonworks.com/blog/apache-ambari-technical-workshop/)
 - A higher level blog about the direction of Ambari extensibility is available [here](http://hortonworks.com/blog/future-apache-ambari/)
 
