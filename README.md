@@ -4,6 +4,7 @@ These demos are part of a webinar on Ambari.
 - Slides and webinar recording available at http://hortonworks.com/partners/learn/#ambari
 - Blog article on the topics presented in the webinar is available [here](http://hortonworks.com/blog/apache-ambari-technical-workshop/)
 - A higher level blog about the direction of Ambari extensibility is available [here](http://hortonworks.com/blog/future-apache-ambari/)
+- Ambari roadmap is also available on the [wiki](https://github.com/apache/ambari/tree/trunk/ambari-server/src/main/resources/common-services/HBASE/0.96.0.2.0)
 
 **Want to suggest a custom Ambari service or view? Suggest [here](https://github.com/abajwa-hw/ambari-workshops/issues)**
 
@@ -63,6 +64,8 @@ Documentation on stacks/services can be found [here](https://cwiki.apache.org/co
 | [KPMG Analytics and Visualization Environment](https://github.com/KaveIO/AmbariKave/wiki) | [KaveIO](https://github.com/KaveIO/AmbariKave/wiki) | Medium | KPMG Analytics and Visualization Environment | The KAVE combines the power of a Lambda Stack, with a development line and core analysis tools. |
 | [Solr](https://github.com/LucidWorks/solr-stack)| [LucidWorks](https://github.com/LucidWorks/solr-stack) | Easy | deploy/manage Solr from Ambari | Will be added  to HDP in future | 
 | [Cask](http://cask.co/)|[Cask service](https://github.com/caskdata/ambari-cdap-service)| Medium | Deploy Cask |  |
+| [MongoDB](https://www.mongodb.org/)|[nikunjness](https://github.com/nikunjness/mongo-ambari)| Easy | Deploy Mongo | |
+| [Redis](http://redis.io/)|[nikunjness](https://github.com/nikunjness/redis-ambari)| Easy | Deploy Redis | |
 
 
 ##### Developer FAQ:
