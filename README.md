@@ -67,6 +67,32 @@ Documentation on stacks/services can be found [here](https://cwiki.apache.org/co
 | [MongoDB](https://www.mongodb.org/)|[nikunjness](https://github.com/nikunjness/mongo-ambari)| Easy | Deploy Mongo | |
 | [Redis](http://redis.io/)|[nikunjness](https://github.com/nikunjness/redis-ambari)| Easy | Deploy Redis | |
 
+##### Integration with Ambari Metrics
+
+- In Ambari 2.1 onwards, custom services can push their metrics to Ambari Metrics service and define their own widgets.  Documentation [here](https://cwiki.apache.org/confluence/display/AMBARI/Metrics+Collector+API+Specification)
+
+
+The Onyara team recently did this integration for Apache Nifi. Blog and code samples below:
+- http://bryanbende.com/development/2015/07/31/ambari-metrics-part1-metrics-collector/
+- http://bryanbende.com/development/2015/08/16/ambari-metrics-part2-service-definition/
+- https://github.com/apache/nifi/tree/master/nifi-nar-bundles/nifi-ambari-bundle/nifi-ambari-reporting-task
+
+Code samples:
+- [Simple metric producer](https://github.com/bbende/ambari-metric-producer)
+- [HDFS metrics/widgets](https://github.com/apache/ambari/tree/trunk/ambari-server/src/main/resources/common-services/HDFS/2.1.0.2.0)
+- Nifi metrics/widgets
+  - https://github.com/abajwa-hw/ambari-nifi-service/blob/master/metrics.json
+  - https://github.com/abajwa-hw/ambari-nifi-service/blob/master/widgets.json
+
+
+##### Enhanced configs
+
+- In Ambari 2.1 onwards, custom services can define enhanced configurations (similar to HDFS, YARN etc) to make their configuration panel look native. More details available in [wiki](https://cwiki.apache.org/confluence/display/AMBARI/Enhanced+Configs)
+
+Code samples:
+- [Hive](https://github.com/apache/ambari/blob/8967ed9bc8967f6f6783c16f6403a3de0a0b2792/ambari-server/src/main/resources/stacks/HDP/2.2/services/HIVE/themes/theme.json)
+- [HDFS](https://github.com/apache/ambari/blob/291b7cbf5852db3fa37f4f180158d0958241e05b/ambari-server/src/main/resources/stacks/HDP/2.2/services/HDFS/themes/theme.json)
+- [YARN](https://github.com/apache/ambari/blob/291b7cbf5852db3fa37f4f180158d0958241e05b/ambari-server/src/main/resources/stacks/HDP/2.2/services/YARN/themes/theme.json)
 
 ##### Developer FAQ:
 
