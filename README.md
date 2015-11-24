@@ -75,15 +75,15 @@ Documentation on stacks/services can be found [here](https://cwiki.apache.org/co
 The Onyara team recently did this integration for Apache Nifi. Blog and code samples below:
 - http://bryanbende.com/development/2015/07/31/ambari-metrics-part1-metrics-collector/
 - http://bryanbende.com/development/2015/08/16/ambari-metrics-part2-service-definition/
-- https://github.com/apache/nifi/tree/master/nifi-nar-bundles/nifi-ambari-bundle/nifi-ambari-reporting-task
+
 
 Code samples:
 - [Simple metric producer](https://github.com/bbende/ambari-metric-producer)
-- [HDFS metrics/widgets](https://github.com/apache/ambari/tree/trunk/ambari-server/src/main/resources/common-services/HDFS/2.1.0.2.0)
+- [Nifi metrics producer](https://github.com/apache/nifi/tree/master/nifi-nar-bundles/nifi-ambari-bundle/nifi-ambari-reporting-task)
 - Nifi metrics/widgets
   - https://github.com/abajwa-hw/ambari-nifi-service/blob/master/metrics.json
   - https://github.com/abajwa-hw/ambari-nifi-service/blob/master/widgets.json
-
+- [HDFS metrics/widgets](https://github.com/apache/ambari/tree/trunk/ambari-server/src/main/resources/common-services/HDFS/2.1.0.2.0)
 
 ##### Enhanced configs
 
