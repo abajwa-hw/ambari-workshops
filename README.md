@@ -85,6 +85,10 @@ Code samples:
   - https://github.com/abajwa-hw/ambari-nifi-service/blob/master/widgets.json
 - [HDFS metrics/widgets](https://github.com/apache/ambari/tree/trunk/ambari-server/src/main/resources/common-services/HDFS/2.1.0.2.0)
 
+##### Automated Kerberos setup
+
+Ambari supports services automating kerberos setup. More details available at: https://cwiki.apache.org/confluence/display/AMBARI/Automated+Kerberizaton
+
 ##### Enhanced configs
 
 - In Ambari 2.1 onwards, custom services can define enhanced configurations (similar to HDFS, YARN etc) to make their configuration panel look native. More details available in [wiki](https://cwiki.apache.org/confluence/display/AMBARI/Enhanced+Configs)
